@@ -202,7 +202,7 @@ const Home = () => {
             <defs>
             <linearGradient id="paint0_linear_1_1538" x1="0.999986" y1="0.5" x2="1.00001" y2="541.5" gradientUnits="userSpaceOnUse">
             <stop stop-color="#FF6054"/>
-            <stop offset="1" stop-color="#23FFBE"/>
+            <stop offset="1" stop-color="#23FFBE"/>  
             </linearGradient>
             </defs>
           </svg>
@@ -240,6 +240,78 @@ const Home = () => {
               </linearGradient>
             </defs>
           </svg>
+          <svg
+  className={`${styles["section-line"]} ${styles.mobile}`}
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 358 1517"
+  preserveAspectRatio="none"
+  fill="none"
+>
+  <g clip-path="url(#clip0_1_3096)">
+    <g opacity="0.45" filter="url(#filter0_f_1_3096)">
+      <circle cx="401" cy="1339" r="206" fill="#FF5245" />
+    </g>
+    <g opacity="0.45" filter="url(#filter1_f_1_3096)">
+      <path
+        d="M413 1777.01C413 1890.78 238.771 1869.51 125 1869.51C11.2293 1869.51 -81 1777.28 -81 1663.51C-81 1549.74 63 1216.51 125 1457.51C125 1585.51 413 1663.24 413 1777.01Z"
+        fill="#23FFBE"
+      />
+    </g>
+  </g>
+  <rect
+    x="1"
+    y="1"
+    width="356"
+    height="1515"
+    rx="14"
+    stroke="url(#paint0_linear_1_3096)"
+    strokeWidth="2"
+    strokeDasharray="2 2"
+  />
+  <defs>
+    <filter
+      id="filter0_f_1_3096"
+      x="75"
+      y="1013"
+      width="652"
+      height="652"
+      filterUnits="userSpaceOnUse"
+      colorInterpolationFilters="sRGB"
+    >
+      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1_3096" />
+    </filter>
+    <filter
+      id="filter1_f_1_3096"
+      x="-201"
+      y="1252"
+      width="734"
+      height="739.083"
+      filterUnits="userSpaceOnUse"
+      colorInterpolationFilters="sRGB"
+    >
+      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1_3096" />
+    </filter>
+    <linearGradient
+      id="paint0_linear_1_3096"
+      x1="179"
+      y1="0"
+      x2="233.634"
+      y2="1515.15"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stopColor="#FF6054" />
+      <stop offset="1" stopColor="#23FFBE" />
+    </linearGradient>
+    <clipPath id="clip0_1_3096">
+      <rect width="358" height="1517" rx="15" fill="white" />
+    </clipPath>
+  </defs>
+</svg>
+
           <div className={styles.content}>
             <p className={styles.subtitle}>The crypto market lacks a sustainable development mechanism, hurting both projects and investors</p>
             <div className={styles.cards}>
@@ -457,8 +529,80 @@ const Home = () => {
       <stop offset="1" stopColor="#23FFBE" stopOpacity="0.39" />
     </linearGradient>
   </defs>
+        </svg>
+        
+        <svg
+  className={`${styles["section-line"]} ${styles.mobile}`}
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 358 2205"
+  preserveAspectRatio="none"
+  fill="none"
+>
+  <g clipPath="url(#clip0_1904_1421)">
+    <g opacity="0.45" filter="url(#filter0_f_1904_1421)">
+      <circle cx="351" cy="2056" r="206" fill="#FFDF2C" />
+    </g>
+    <g opacity="0.45" filter="url(#filter1_f_1904_1421)">
+      <path
+        d="M363 2494.01C363 2607.78 188.771 2586.51 75 2586.51C-38.7707 2586.51 -131 2494.28 -131 2380.51C-131 2266.74 13 1933.51 75 2174.51C75 2302.51 363 2380.24 363 2494.01Z"
+        fill="#23FFBE"
+      />
+    </g>
+  </g>
+  <rect
+    x="1"
+    y="1"
+    width="356"
+    height="2203"
+    rx="14"
+    stroke="url(#paint0_linear_1904_1421)"
+    strokeWidth="2"
+    strokeDasharray="2 2"
+    fill="none"
+  />
+  <defs>
+    <filter
+      id="filter0_f_1904_1421"
+      x="25"
+      y="1730"
+      width="652"
+      height="652"
+      filterUnits="userSpaceOnUse"
+      colorInterpolationFilters="sRGB"
+    >
+      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1904_1421" />
+    </filter>
+    <filter
+      id="filter1_f_1904_1421"
+      x="-251"
+      y="1969"
+      width="734"
+      height="739.083"
+      filterUnits="userSpaceOnUse"
+      colorInterpolationFilters="sRGB"
+    >
+      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1904_1421" />
+    </filter>
+    <linearGradient
+      id="paint0_linear_1904_1421"
+      x1="179"
+      y1="1.1184e-06"
+      x2="294.261"
+      y2="2199.13"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stopColor="#23FFBE" />
+      <stop offset="1" stopColor="#23FFBE" />
+    </linearGradient>
+    <clipPath id="clip0_1904_1421">
+      <rect width="358" height="2205" rx="15" fill="white" />
+    </clipPath>
+  </defs>
 </svg>
-
           <div className={styles.content}>
             <h2 className={styles['secondary-title']}>WHAT MAKES <br></br>AN EFFECTIVE SOLUTION?</h2>
             <p className={styles.subtitle}>Over the years, we&quot;ve crystallized our understanding of what the market truly needs</p>
@@ -741,6 +885,80 @@ const Home = () => {
     </clipPath>
   </defs>
 </svg>
+<svg
+ className={`${styles["section-line"]} ${styles.mobile}`}
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 358 7688"
+  preserveAspectRatio="none"
+  fill="none"
+>
+  <g clipPath="url(#clip0_1905_1875)">
+    <g opacity="0.45" filter="url(#filter0_f_1905_1875)">
+      <circle cx="351" cy="7578" r="206" fill="#FFDF2C" />
+    </g>
+    <g opacity="0.45" filter="url(#filter1_f_1905_1875)">
+      <path
+        d="M363 8016.01C363 8129.78 188.771 8108.51 75 8108.51C-38.7707 8108.51 -131 8016.28 -131 7902.51C-131 7788.74 13 7455.51 75 7696.51C75 7824.51 363 7902.24 363 8016.01Z"
+        fill="#FFDF2C"
+      />
+    </g>
+  </g>
+  <rect
+    x="1"
+    y="1"
+    width="356"
+    height="7686"
+    rx="14"
+    stroke="url(#paint0_linear_1905_1875)"
+    strokeWidth="2"
+    strokeDasharray="2 2"
+    fill="none"
+  />
+  <defs>
+    <filter
+      id="filter0_f_1905_1875"
+      x="25"
+      y="7252"
+      width="652"
+      height="652"
+      filterUnits="userSpaceOnUse"
+      colorInterpolationFilters="sRGB"
+    >
+      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1905_1875" />
+    </filter>
+    <filter
+      id="filter1_f_1905_1875"
+      x="-251"
+      y="7491"
+      width="734"
+      height="739.083"
+      filterUnits="userSpaceOnUse"
+      colorInterpolationFilters="sRGB"
+    >
+      <feFlood floodOpacity="0" result="BackgroundImageFix" />
+      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+      <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1905_1875" />
+    </filter>
+    <linearGradient
+      id="paint0_linear_1905_1875"
+      x1="179"
+      y1="3.89942e-06"
+      x2="1538.62"
+      y2="7440.14"
+      gradientUnits="userSpaceOnUse"
+    >
+      <stop stopColor="#FFDF2C" />
+      <stop offset="1" stopColor="#FFDF2C" />
+    </linearGradient>
+    <clipPath id="clip0_1905_1875">
+      <rect width="358" height="7688" rx="15" fill="white" />
+    </clipPath>
+  </defs>
+</svg>
+
+
 
           <div className={styles.content}>
             <h2 className={styles['secondary-title']}>WHO WILL BUY THIS?</h2>

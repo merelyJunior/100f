@@ -8,7 +8,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import styles from'./index.module.css';
 import Image from 'next/image';
-
+ 
 const ReviewPlatformSlider = () => {
   return (
     <Swiper
