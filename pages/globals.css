@@ -1,0 +1,335 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  outline: 0 !important;
+  -webkit-appearance: none;
+}
+
+body {
+  font-family: 'Geologica', sans-serif;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 100;
+  background-color: #0C0C2A;
+}
+ul,
+ol {
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  display: block;
+}
+.alignright{
+  margin-right: 0;
+  margin-left: auto; 
+ }
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Wadik', sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+a {
+  display: block;
+  background-color: transparent;
+  text-decoration: none;
+  transition: 0.3s ease;
+  opacity: 1;
+}
+
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  line-height: 1.15;
+  margin: 0;
+  padding: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  display: block;
+  cursor: pointer;
+  transition: 0.3s ease;
+  opacity: 1;
+}
+section, footer {
+  max-width: 975px;
+  width: 100%;
+  margin: 35px auto;
+  border-radius: 15px;
+}
+.error-page-section{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  min-height: 100vh;
+  margin-bottom: 0;
+}
+.error-page{
+  display: flex;
+  position: relative;
+  border-radius: 15px;
+  background-image: url('/assets/img/404-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+.error-page-content{
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 65px;
+  padding: 0 25px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+
+}
+.error-page-content div:nth-child(1){
+  margin-bottom: 125px;
+  max-width: 376px;
+}
+.error-page h1{
+  margin-top: 70px;
+  font-size: 30px;
+}
+.error-page p{
+  margin: 15px 0;
+}
+.error-page-btn {
+  position: relative;
+  max-width: 170px;
+  z-index: 5;
+  padding: 10px 20px;
+  padding-left: 35px;
+  border-radius: 5px;
+  background: rgb(5, 233, 240);
+  font-size: 14px;
+  font-weight: 700;
+  color: #000000;
+}
+.error-page-btn::after {
+  content: '';
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  left: 10px;
+  background-image: url('/assets/img/icons/finger.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 17px;
+  height: 17px;
+}
+section:first-child{
+  margin-top: 0;
+}
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  padding-left: 17px;
+  border-radius: 5px;
+  border: none;
+  background: #2D2986;
+  color: #fff;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 100;
+}
+input::placeholder {
+  color: #fff;
+}
+.content {
+  flex: 1;
+  margin-left: 230px;
+  padding: 10px 25px;
+  background-color: #0C0C2A;
+  color: #fff;
+  transition: all .3s ease;
+}
+.main-title{
+  margin-top: 20px;
+  font-size: 30px;
+}
+.title-span{
+  color: #05E9F0;
+}
+.secondary-title{
+  position: relative;
+  font-size: 24px;
+}
+.swiper-pagination {
+  bottom: 40px !important;
+}
+.swiper-pagination-bullet{
+  background-color: #ffffffad !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: #FFFFFF !important;
+}
+
+.swal2-popup {
+  padding: 0; 
+  background: none; 
+  box-shadow: none;
+  border-radius: 0; 
+}
+
+.swal2-title {
+  display: none; 
+}
+
+.swal2-html-container {
+  padding: 0 !important;
+ 
+}
+.swal2-popup{
+  overflow: hidden;
+  min-width: 685px;
+}
+.my-swal-popup{
+  min-width:unset !important;
+  width: 450px;
+}
+.swal2-close{
+  font-size: 1.5em;
+  margin-top: 7px;
+  margin-right: 7px;
+}
+.react-tel-input{
+  margin-bottom: 15px !important;
+}
+.react-tel-input .flag-dropdown{
+  border: none !important;
+}
+.react-tel-input .form-control{
+  width: 100% !important;
+  padding: 10px !important;
+  padding-left: 40px  !important;
+  border-radius: 5px !important;
+  border: none !important;
+  background: #2D2986 !important;
+  color: #fff !important;
+  font-family: inherit !important;
+  font-size: 14px !important;
+  font-weight: 100 !important;
+}
+.react-tel-input .flag-dropdown,
+.react-tel-input .selected-flag:hover, .react-tel-input .selected-flag:focus{
+  background-color: transparent !important;
+}
+.react-tel-input .country-list{
+  background-color: #101239 !important;
+  top: -125px !important;
+  max-height: 200px !important;
+}
+.country{
+  display: flex !important;
+  justify-content: flex-start !important;
+  text-align: left;
+}
+.react-tel-input .country-list .country .dial-code{
+  color: #fff !important;
+}
+.react-tel-input .country-list .country.highlight{
+  color: #ffd900a1 !important;
+}
+.react-tel-input .country-list .country.highlight {
+  background-color: #ffd900b7!important;
+}
+.react-tel-input .country-list .country:hover{
+  background-color: #f1f1f130 !important;
+}
+.react-tel-input .country-list{
+  width: 350px !important;
+  box-shadow: none !important;
+}
+
+div:where(.swal2-container) .swal2-html-container{
+  overflow: hidden !important;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 991px) {
+  .content {
+      margin-left: 170px;
+  }
+  .main-title {
+    font-size: 26px;
+  }
+  .swiper-pagination {
+    bottom: 10px !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .swal2-popup{
+    overflow: hidden;
+    min-width: 485px;
+  }
+  .content {
+      margin-top: 90px;
+      margin-left: 0px;
+      flex: none;
+  }
+  .error-page-content{
+    flex-direction: column;
+    align-items: center;
+  }
+  .error-page-content div:nth-child(1){
+    margin-bottom: 50px;
+  }
+  .error-page-content div:nth-child(2){
+    width: 275px;
+    height: 291px;
+  }
+  .error-page h1{
+    font-size: 22px;
+  }
+  .error-page p{
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .swiper-slide{
+    height: unset !important;
+  }
+  .main-title{
+    margin-top: 80px;
+    font-size: 22px;
+  }
+  .content {
+    padding: 15px;
+  }
+  .error-page{
+    background-image: url('/assets/img/404-bg-m.png');
+  }
+  .swal2-popup{
+    overflow: hidden;
+    min-width: 350px;
+  }
+  
+}

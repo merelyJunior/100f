@@ -1,0 +1,215 @@
+
+.main-title {
+    font-size: 30px;
+    margin-top: 20px;
+    max-width: 587px;
+    margin-bottom: 15px;
+    text-transform: none;
+    color: #FFD900;
+}
+.subtitle {
+    display: block;
+    max-width: 410px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+.form-inner {
+    position: relative;
+    overflow: hidden;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    padding: 25px 35px;
+    padding-right: 0;
+    padding-bottom: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background-image: url('/assets/img/new-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+.mailing-form {
+    max-width: 587px;
+    width: 100%;
+}
+.form-inner img{
+    position: absolute;
+    right: 30px;
+    bottom: -25px;
+}
+.form-group {
+    margin-bottom: 10px;
+    max-width: 407px;
+    margin-right: 15px;
+    position: relative;
+}
+.fix-form-group {
+    margin-bottom: 25px;
+}
+.error-message {
+    position: absolute;
+    top: 12px;
+    right: 10px;
+    font-size: 12px;
+    color: red;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.error-message.active {
+    opacity: 1;
+}
+.mailing-form-btn {
+    position: relative;
+    z-index: 5;
+    padding: 15px 15px 15px 36px;
+    padding-left: 35px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    background: #05E9F0;
+    color: #000;
+    margin-bottom: 60px;
+}
+.mailing-form-btn::after {
+    content: '';
+    position: absolute;
+    z-index: 3;
+    top: 15px;
+    left: 15px;
+    background-image: url('/assets/img/icons/finger.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 17px;
+    height: 17px;
+}
+.contacts-content__img {
+    /* margin-right: 50px; */
+    /* margin-top: 45px; */
+}
+.contacts-content__title {
+    font-family: 'Wadik', sans-serif;
+    font-size: 13px;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.contacts-content__title>small {
+    font-family: 'Geologica', sans-serif;
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0.15px;
+}
+.fix-img{
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+}
+.fix-content{
+    width: 100%;
+    height: 480px;
+}
+.button-cont{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+}
+.button-cont p {
+    margin-left: 15px;
+}
+.note{
+    position: absolute;
+    font-family: "Wadik", sans-serif;
+    font-size: 15px;
+    top: 30px;
+    right: -20px;
+    padding: 10px 15px;
+    padding-right: 40px;
+    color: #000000;
+    background-color: #FFF04B;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 0px rgb(255 240 75);
+}
+.note.mobile{
+    display: none;
+}
+@media screen and (max-width: 1100px) {
+    .main-title{
+        max-width: 440px;
+    }
+    .form-inner img{
+        right: -65px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .fix-content{
+        height: 240px;
+    }
+    .fix-img{
+        left: 140px;
+    }
+    .form-inner {
+        flex-direction: column;
+        align-items: center;
+    }
+   
+    .form-group {
+        max-width: 600px;
+    }
+    .contacts-content__img {
+        margin: 0;
+        margin-top: -25px;
+        width: 335px;
+        height: 282px;
+    }
+    .contacts-content__title {
+        display: none;
+    }
+    .mailing-form {
+        padding-top: 75px;
+        padding-bottom: 250px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .mailing-form {
+        padding-bottom: 0;
+        padding-top: 35px;
+        max-width: unset;
+    }
+    .fix-img{
+        left: unset;
+        right: -50px;
+    }
+    .form-inner {
+        padding: 50px 15px 0px 24px;
+        height: 725px;
+        margin-top: 0;
+        background-image: url('/assets/img/contact-bg-new-m.png');
+    }
+    .contacts-content__img {
+        margin: 0;
+        margin-top: -15px;
+        width: 300px !important;
+        height: 250px !important;
+    }
+    .main-title{
+        margin-top: 0;
+        max-width: 240px;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+    .note{
+        display: none;
+    }
+    .note.mobile{
+        display: block;
+        font-size: 12px;
+    }
+    .form-inner img{
+        right: 15px;
+        width: 315px;
+        height: 275px;
+    }
+}

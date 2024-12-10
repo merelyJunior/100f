@@ -1,0 +1,58 @@
+.policy, .disclaimer {
+    margin-top: 50px !important;
+    margin-bottom: 50px;
+}
+.policy .main-title, .disclaimer .main-title{
+ font-size: 24px;
+}
+#policy p,
+#disclaimer p{
+    margin: 25px 0;
+    line-height: 135%;
+}
+#policy span{
+    text-decoration: underline;
+}
+#policy a{
+    color: #05E9F0;
+    text-decoration: underline !important;
+    display: inline-block;
+}
+.important-block{
+    margin: 40px 0;
+    padding: 40px 60px 15px 45px;
+    border-radius: 10px;
+    background-image: url('/assets/img/policy.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.policy .main-title,
+.disclaimer .main-title{
+    margin-top: 25px !important; 
+    margin-bottom: 25px;
+}
+.policy .secondary-title,
+.disclaimer .secondary-title{
+    margin-top: 25px !important; 
+    margin-bottom: 25px;
+}
+.important-block .secondary-title{
+    margin-top: 0 !important;
+}
+#policy.secondary-title,
+#disclaimer.secondary-title{
+    font-size: 24px;
+    margin-bottom: 25px;
+    margin-top: 40px;
+}
+@media screen and (max-width: 576px){
+    .policy, .disclaimer{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .important-block{
+        padding: 15px 30px 15px 25px;
+    }
+}

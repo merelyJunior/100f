@@ -1,0 +1,129 @@
+.filter-container > div:first-child{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.difficulty{
+  margin-bottom: 30px;
+}
+.difficulty > div{
+  margin-top: 15px;
+  display: flex;
+}
+.filter-label{
+  position: relative;
+  margin-right: 5px;
+  padding: 6px 22px 6px 18px;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.filter-label:nth-child(1){
+  border: 1px solid #05E9F0;
+}
+.filter-label:nth-child(2){
+  background-color: #201A8E;
+}
+.filter-label:nth-child(3){
+  background-color: #882E2E;
+  
+}
+.filter-label:nth-child(1).active{
+  border: 1px solid #05e8f065;
+  color: #ffffffb4;
+}
+.filter-label:nth-child(2).active{
+  background-color: #201a8e59;
+  color: #ffffffb4;
+}
+.filter-label:nth-child(3).active{
+  background-color: #882e2e5b;
+  color: #ffffffb4;
+  
+}
+.filter-label::before{
+  content: '•';
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 8px;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+.filter-label:nth-child(1)::before{
+  color: #05E9F0;
+}
+.filter-label:nth-child(2)::before{
+  color: #7B75FB;
+}
+.filter-label:nth-child(3)::before{
+  color: #FF6868;
+}
+.filter-label:nth-child(1).active::before{
+  color: #05e8f079;
+}
+.filter-label:nth-child(2).active::before{
+  color: #7c75fb80;
+}
+.filter-label:nth-child(3).active::before{
+  color: #ff68686c;
+}
+.filter-label::after{
+  content: '';
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  width: 12px;
+  height: 12px;
+  background-image: url('/assets/img/icons/plus-2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease;
+}
+.filter-label.active::after{
+  background-image: url('/assets/img/icons/check.png');
+}
+.reading-time{
+  max-width: 390px;
+  width: 100%;
+}
+.reading-time p {
+  margin-bottom: 15px;
+}
+.btn-container{
+  display: flex;
+  align-items: center;
+}
+.btn-apply,
+.btn-clear{
+  margin-bottom: 25px;
+  padding: 10px 25px;
+  border-radius: 5px;
+  background-color: #05E9F0;
+  font-size: 14px;
+}
+.btn-clear{
+  margin-left: 15px;
+  background-color: #FF6868;
+  color: #fff;
+}
+@media screen and (max-width: 991px) {
+  
+}
+@media screen and (max-width: 768px) {
+  
+}
+@media screen and (max-width: 576px) {
+  .filter-container,
+  .filter-container > div:first-child{
+    display: flex;
+    flex-direction: column;
+  }
+  .btn-container{
+    margin-top: 55px;
+  }
+}

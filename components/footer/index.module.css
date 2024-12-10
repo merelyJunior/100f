@@ -1,0 +1,160 @@
+.footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 50px 0px;
+    margin-bottom: 0;
+    position: relative;
+    background-image: url('/assets/img/Frame63.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.footer>div:first-child {
+    margin-left: 50px;
+}
+.footer>div:nth-child(2) {
+    margin-right: 120px;
+    margin-left: 70px;
+}
+.footer div:last-child {
+    margin-left: 35px;
+    margin-right: 90px;
+}
+.footer-logo {
+    width: 75px;
+    height: 23px;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: auto;
+}
+.footer div:first-child p {
+    max-width: 280px;
+    font-size: 14px;
+}
+.footer a {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer .docs {
+    position: relative;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.copyright, .copyright-adaptive {
+    font-size: 12px;
+}
+.copyright-adaptive {
+    display: none;
+}
+.footer-button{
+    margin: 0;
+    position: relative;
+    display: block;
+    cursor: pointer;
+    padding: 10px 15px 10px 30px;
+    border-radius: 5px;
+    background: rgb(86, 78, 255);
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.footer-button-adaptive{
+    display: none;
+}
+.docs-policy::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -25px;
+    background-image: url('/assets/img/icons/files.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+}
+.docs-disclaimer::after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: -25px;
+    background-image: url('/assets/img/icons/carbon_rule.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 18px;
+    height: 18px;
+}
+.footer-button::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-image: url('/assets/img/icons/Tg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 17px;
+    height: 17px;
+}
+
+@media screen and (max-width: 991px) {
+    .footer>div:first-child {
+        margin-left: 25px;
+    }
+    .footer>div:nth-child(2) {
+        margin-right: 0;
+    }
+    .footer div:last-child {
+        margin-right: 25px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .footer {
+        padding: 24px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        background-image: url('/assets//img/Framegfasg.png');
+    }
+    .footer>div:first-child, .footer>div:last-child {
+        margin-right: 0;
+        margin-left: 25px;
+    }
+    .footer>div:first-child {
+        margin-bottom: 20px;
+    }
+    .footer>div:nth-child(2) {
+        margin-right: 0;
+        margin-left: 25px;
+    }
+    .footer-logo {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        margin-left: 0;
+    }
+    
+    
+    .footer-button {
+        display: none;
+    }
+    .footer-button-adaptive {
+        display: block;
+        margin-bottom: 30px !important;
+        max-width: 110px;
+    }
+    .docs {
+        margin-left: 25px;
+    }
+    .copyright {
+        display: none;
+    }
+    .copyright-adaptive {
+        margin-top: 30px;
+        display: block;
+        opacity: 0.45;
+    }
+}

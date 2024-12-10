@@ -1,0 +1,129 @@
+.currency-wrapper{
+    position: absolute;
+    width: 1200px;
+    top: 0;
+    left: 0;
+    justify-content: flex-end;
+    align-items: center;
+    display: flex;
+    height: 67px;
+    overflow: hidden;
+    border-radius: 15px 15px 0 0;
+}
+
+.plugin-inner{
+    display: flex;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #323232;
+    animation: marquee 80s linear infinite;
+}
+.plugin-item{
+    position: relative;
+    margin-right: 15px;
+}
+.plugin-item::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 17px;
+    width: 2px;
+    height: 40%;
+    background-color: #fff;
+}
+.item-currency{
+    display: flex;
+    align-items: center;
+}
+.currency-info{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    padding-left: 0;
+    position: relative;
+}
+.currency-logo{
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+.currency-logo img {
+    border-radius: 50%;
+}
+.currency-name{
+    width: 110px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+}
+.currency-span{
+    display: block;
+    font-size: 10px;
+    font-weight: 300;
+    color: #fff;
+}
+.currency-value{
+    text-align: right;
+    padding: 15px;
+    padding-left: 0;
+    position: relative;
+}
+.value-price{
+    
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+}
+.value-rate{
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    width: 35px;
+    margin-right: 0;
+    margin-left: auto;
+    font-weight: bold;
+    font-size: 10px;
+    color: #17C683;
+}
+.value-rate.negative-rate {
+    color: #EB1818;
+}
+.value-rate::before {
+    content: '';
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 6px solid #17C683;
+    position: absolute;
+    top: 2px;
+    left: -10px;
+}
+.value-rate.negative-rate::before {
+    content: "";
+    display: inline-block;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 7px solid #c61717;
+    border-bottom: unset;
+    left: -10px;
+}
+
+@keyframes marquee{
+    0% {
+        transform: translateX(0%);
+    }
+    
+    100% {
+        transform: translateX(100%);
+    }
+}
+@media screen and (max-width: 768px) {
+    
+}
+@media screen and (max-width: 576px) {
+
+    .currency-wrapper{
+        height: 45px;
+    }
+}

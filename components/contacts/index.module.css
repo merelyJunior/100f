@@ -1,0 +1,25 @@
+.first-screen-card-container{
+  position: relative;
+    padding: 0px 0px 35px 0px;
+    border-radius: 15px;
+    background-image: url('/assets/img/IMG_7755_2.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+.inner{
+  max-width: 850px;
+  margin-left: 50px;
+  margin-right: 35px;
+  margin-top: 40px;
+}
+.contacts-span{
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.subtitle{
+  margin-bottom: 15px;
+  max-width: 530px;
+}

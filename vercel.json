@@ -1,0 +1,24 @@
+{
+    "redirects": [
+      {
+        "source": "/webinar",
+        "destination": "https://4.100f.com/webinar",
+        "permanent": true
+      },
+      {
+        "source": "/web",
+        "destination": "https://4.100f.com/web",
+        "permanent": true
+      },
+      {
+        "source": "/money",
+        "destination": "https://4.100f.com/money",
+        "permanent": true
+      },
+      {
+        "source": "/monety",
+        "destination": "https://4.100f.com/monety",
+        "permanent": true
+      }
+    ]
+  }

@@ -1,0 +1,163 @@
+
+
+.slider-section{
+  margin-top: 45px;
+  padding: 25px 20px;
+  border-radius: 15px;
+  background-color: #1A194C;
+  overflow: hidden;
+  position: relative;
+  display: none;
+}
+.third-title{
+  font-size: 22px;
+  margin-bottom: 34px;
+}
+
+.slider-wrapper{
+  padding: 15px 20px;
+  border-radius: 12px;
+  background-color: #28285D;
+  width: 125%;
+  padding-right: 60px;
+  position: relative;
+  margin-bottom: 20px;
+}
+.four-title{
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-align: left;
+}
+
+.team-group-item{
+  padding: 13px 17px;
+  background-color: #101053;
+  border-radius: 12px;
+  text-align: left;
+}
+
+.team-title{
+  text-align: left;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+.member-img{
+  object-fit: contain;
+  max-width: unset;
+  width: 150px;
+  height: 136px;
+}
+.member-title{
+  font-family: 'Wadik', sans-serif;
+  font-size: 12px;
+  margin-top: 7px;
+}
+.member-link{
+  display: flex;
+  margin-top: 7px;
+  font-size: 12px;
+  font-weight: normal;
+  color: #fff;
+}
+.member-link img{
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+}
+.member-desc{
+  margin-top: 15px;
+}
+.member-desc p{
+  font-size: 11px;
+  margin-top: 10px;
+}
+
+.button-container {
+  position: absolute;
+  top: 10px;
+  left: 227px;
+  z-index: 10;
+  background: #28285d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.swiper-founders-button-next,
+.swiper-clevel-button-next,
+.swiper-advisors-button-next {
+  background-color: #05E9F0;
+  border-radius: 3px;
+  width: 25px;
+  height: 25px;
+}
+
+.swiper-founders-button-prev,
+.swiper-clevel-button-prev,
+.swiper-advisors-button-prev{
+  background-color: #05E9F0;
+  width: 25px;
+  height: 25px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.swiper-founders-button-next::before,
+.swiper-clevel-button-next::before,
+.swiper-advisors-button-next::before{
+  content: '';
+  position: absolute;
+  background-image: url('/assets/img/icons/left-pagination.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 9px;
+  height: 10px;
+  top: 7px;
+  right: 9px;
+  transform: rotate(180deg);
+}
+.swiper-founders-button-prev::before,
+.swiper-clevel-button-prev::before,
+.swiper-advisors-button-prev::before{
+  content: '';
+  position: absolute;
+  background-image: url('/assets/img/icons/left-pagination.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 9px;
+  height: 10px;
+  top: 7px;
+  left: 9px;
+}
+
+.logos-container > div{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+.logos-container > div:first-child{
+  margin-top: 25px;
+}
+.logos-container > div:last-child{
+  margin-bottom: 0;
+}
+.logos-container img{
+  object-fit: contain;
+  max-width: unset;
+}
+
+
+
+
+
+@media screen and (max-width: 576px) {
+  .slider-section{
+    display: block;
+  }
+  
+}

@@ -1,0 +1,12 @@
+.exeptional-section-slider{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 105%;
+  left: -20px;
+}
+
+@media screen and (max-width: 768px) {
+  .exeptional-section-slider{
+    width: 115%;
+  }
+}

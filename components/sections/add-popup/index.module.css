@@ -1,0 +1,105 @@
+
+
+.wrapper {
+    position: relative;
+    max-width: 630px;
+    padding: 40px 55px;
+    margin: 0 auto;
+    background: linear-gradient(90deg, #564EFF 0%, #342FA0 100%);
+    text-align: left;
+    overflow: hidden;
+    color: #fff ;
+}
+.desc{
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-size: 20px;
+}
+.subtitle{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    opacity: 0.45;
+    font-size: 14px;
+    font-weight: 200;
+}
+.popup-list{
+    padding-left: 25px;
+}
+.popup-list-item{
+    font-size: 14px;
+    margin-bottom: 8px;
+    position: relative;
+    max-width: 295px;
+}
+.popup-list-item::before{
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 3px;
+    width: 16px;
+    height: 16px;
+    background-image: url('/assets/img/icons/icon33.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.desc img{
+    object-fit: contain;
+}
+.content-title{
+    margin-top: 22px;
+    margin-bottom: 15px;
+}
+.arrow-right{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    background-image: url('/assets/img/icons/arrow2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+    transform: rotate(180deg);
+    cursor: pointer;
+}
+.arrow-left{
+    position: absolute;
+    top: 47%;
+    left: 15px;
+    transform: translateY(-50%);
+    background-image: url('/assets/img/icons/arrow2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+.custom-close{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-image: url('/assets/img/icons/close.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 12px;
+    height: 12px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 576px) {
+    .wrapper {
+        padding: 25px;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .desc{
+        flex-direction: column-reverse;
+    }
+    .desc img{
+        margin-bottom: 15px;
+    }
+}

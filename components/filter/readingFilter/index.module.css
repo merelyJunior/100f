@@ -1,0 +1,47 @@
+.reading-time-filter {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.rc-slider {
+  background-color: transparent;
+}
+
+.rc-slider-rail {
+  border-radius: 4px;
+}
+
+
+.rc-slider-handle {
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  margin-top: -6px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.rc-slider-handle:focus,
+.rc-slider-handle:hover,
+.rc-slider-handle:active {
+  border-color: #08F8FF;
+  box-shadow: 0 0 5px #08F8FF;
+}
+
+.rc-slider-mark {
+  top: 25px;
+}
+
+.rc-slider-mark-text {
+  color: #ffffff81;
+  font-size: 12px;
+}
+
+.rc-slider-mark-text-active {
+  color: #fff;
+}
+.rc-slider-track, .rc-slider-tracks{
+  background-color: #08F8FF;
+}
