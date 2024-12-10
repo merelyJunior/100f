@@ -75,7 +75,8 @@
 .button-container {
   position: absolute;
   top: 10px;
-  left: 227px;
+  left: 70%;
+  transform: translatex(-30%);
   z-index: 10;
   background: #28285d;
   border-radius: 50%;

@@ -1,6 +1,10 @@
 import React, { useState, useRef  } from 'react';
 import styles from './index.module.css';
 import Image from 'next/image';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+import PopupSuccess from '/components/sections/popup-success';
+const MySwal = withReactContent(Swal);
 const PopupWaitlist = () => {
 
 
@@ -22,6 +26,17 @@ const PopupWaitlist = () => {
       newErrors.email = 'Please enter a valid email address';
     }
     return newErrors;
+  };
+  const showPopup = () => {
+    MySwal.fire({
+        html: <PopupSuccess />,  
+        showConfirmButton: false, 
+        showCloseButton: true,  
+        backdrop: true, 
+        customClass: {
+          popup: 'my-swal-popup',
+        },
+      });
   };
 
   const handleSubmit = async (e) => {

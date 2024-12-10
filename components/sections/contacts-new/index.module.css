@@ -135,6 +135,51 @@
 .note.mobile{
     display: none;
 }
+
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    padding-left: 17px;
+    border-radius: 5px;
+    color: #fff;
+    background: #2D2986;
+    appearance: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    font-weight: 100;
+  }
+  
+  .form-group select:focus {
+    border-color:  #2018b6;
+    outline: none;
+  }
+  
+  .form-group select option {
+    cursor: pointer;
+    padding: 10px;
+
+  }
+  
+  .form-group select::after {
+    content: ' ▼';
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+  
+  .error-message {
+    font-size: 12px;
+    color: red;
+    visibility: hidden;
+  }
+  
+  .error-message.active {
+    visibility: visible;
+  }
+
 @media screen and (max-width: 1100px) {
     .main-title{
         max-width: 440px;

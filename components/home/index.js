@@ -493,6 +493,7 @@ const Home = () => {
       
       >
       <span className={styles['section-marker']}></span>
+      <span className={styles['section-line1']}></span>
         <svg  className={styles['marker-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="105" viewBox="0 0 2 105" fill="none">
         <line x1="1" y1="4.37114e-08" x2="0.999995" y2="105" stroke="#23FFBE" stroke-width="2" stroke-dasharray="2 2"/>
         </svg>
@@ -607,7 +608,16 @@ const Home = () => {
             <h2 className={styles['secondary-title']}>WHAT MAKES <br></br>AN EFFECTIVE SOLUTION?</h2>
             <p className={styles.subtitle}>Over the years, we&quot;ve crystallized our understanding of what the market truly needs</p>
             <strong>We&quot;ve validated this by creating a manual prototype that generated $340K+ revenue in less than 12 months</strong>
-            <div className={styles['card-section']}>
+            <div className={styles['card-section']}> 
+              <svg  className={styles['section-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="54" viewBox="0 0 2 54" fill="none">
+              <path d="M1 0L1 54" stroke="url(#paint0_linear_1_1539)" stroke-width="2" stroke-dasharray="2 2"/>
+              <defs>
+              <linearGradient id="paint0_linear_1_1539" x1="0.999997" y1="22.4458" x2="1.00001" y2="374.421" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#23FFBE"/>
+              <stop offset="1" stop-color="#23FFBE"/>
+              </linearGradient>
+              </defs>
+            </svg>
               <h3 className={styles['third-title']}><span>THE SOLUTION:</span> UNIFIED CRYPTO PLATFORM</h3>
               <p className={styles.subtitle}>100 Franklins connects qualified projects with an educated audience, creating conditions for sustainable development and long-term profits</p>
               <div className={styles.cards}>
@@ -642,6 +652,15 @@ const Home = () => {
               </div>
             </div>
             <div className={styles['card-section']}>
+              <svg className={styles['section-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="75" viewBox="0 0 2 75" fill="none">
+<path d="M1 0L1 75" stroke="url(#paint0_linear_1_1541)" stroke-width="2" stroke-dasharray="2 2"/>
+<defs>
+<linearGradient id="paint0_linear_1_1541" x1="0.999995" y1="31.1747" x2="1.00002" y2="520.03" gradientUnits="userSpaceOnUse">
+<stop stop-color="#23FFBE"/>
+<stop offset="1" stop-color="#23FFBE"/>
+</linearGradient>
+</defs>
+</svg>
               <h3 className={styles['third-title']}>Business Model</h3>
               <div className={styles['buisness-model-wrapper']}>
                
@@ -704,6 +723,15 @@ const Home = () => {
               </div>
             </div>
             <div className={styles['card-section']}>
+              <svg className={styles['section-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="75" viewBox="0 0 2 75" fill="none">
+<path d="M1 0L1 75" stroke="url(#paint0_linear_1_1541)" stroke-width="2" stroke-dasharray="2 2"/>
+<defs>
+<linearGradient id="paint0_linear_1_1541" x1="0.999995" y1="31.1747" x2="1.00002" y2="520.03" gradientUnits="userSpaceOnUse">
+<stop stop-color="#23FFBE"/>
+<stop offset="1" stop-color="#23FFBE"/>
+</linearGradient>
+</defs>
+</svg>
               <h3 className={styles['third-title']}>WHAT WE ALREADY HAVE</h3>
               <p className={styles.subtitle}>Market-validated concept ready for technical development</p>
               <div className={styles.cards}>
@@ -727,12 +755,14 @@ const Home = () => {
                   <p className={styles['vision-subtitle']}> $265,000,000 Annual Turnover</p>
                   <p className={styles['vision-note']}>1,000,000 Total Users, 100,000 Paid Users</p>
                   <ul className={styles['card-list']}>
-                    <li className={styles['card-list-item']}>
-                    Platform Demo: <br/><span> Detailed video mockup <br/>of the platform functionality</span>
-                    
+                    <li className={`${styles['card-list-item']} ${styles.mobile}`}>
+                    Platform Demo: <br/><span> Detailed video mockup of the platform functionality</span>
                     </li>
                     <li className={styles['card-list-item']}>
                       3 Patents Pending:<br/><span> Core technology IP protection</span>
+                    </li>
+                    <li className={styles['card-list-item']}>
+                    Platform Demo: <br/><span> Detailed video mockup <br/>of the platform functionality</span>
                     </li>
                   </ul>
                 </div>
