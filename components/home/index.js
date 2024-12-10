@@ -173,8 +173,8 @@ const Home = () => {
         <div className={styles.content}>
             <HomeSlider/>
             <div className={styles['right-side']}>
-              <h1 className={styles["main-title"]}>100 Franklins' Journey <br/>to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers,<br/> Not Promises</h1>
-              <h1 className={`${styles["main-title"]} ${styles.mobile}`}>100 Franklins' Journey <br/> to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers, Not Promises</h1>
+              <h1 className={styles["main-title"]}>100 Franklins&quot; Journey <br/>to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers,<br/> Not Promises</h1>
+              <h1 className={`${styles["main-title"]} ${styles.mobile}`}>100 Franklins&quot; Journey <br/> to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers, Not Promises</h1>
               <p className={styles.subtitle}>We are building a unified platform <br/>connecting qualified Web3 projects <br/>with an educated audience</p>
               <a className={styles['schedule-btn']}>Schedule Demo</a>
             </div>
@@ -232,7 +232,7 @@ const Home = () => {
                 <h3 className={styles['card-title']}>70% Projects Fail</h3>
                 <ul className={styles['card-list']}>
                   <li className={styles['card-list-item']}>
-                    Can't create quality products due to speculative pressure
+                    Can&quot;t create quality products due to speculative pressure
                   </li>
                   <li className={styles['card-list-item']}>
                     Forced to focus on short-term hype
@@ -446,8 +446,8 @@ const Home = () => {
 
           <div className={styles.content}>
             <h2 className={styles['secondary-title']}>WHAT MAKES <br></br>AN EFFECTIVE SOLUTION?</h2>
-            <p className={styles.subtitle}>Over the years, we've crystallized our understanding of what the market truly needs</p>
-            <strong>We've validated this by creating a manual prototype that generated $340K+ revenue in less than 12 months</strong>
+            <p className={styles.subtitle}>Over the years, we&quot;ve crystallized our understanding of what the market truly needs</p>
+            <strong>We&quot;ve validated this by creating a manual prototype that generated $340K+ revenue in less than 12 months</strong>
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}><span>THE SOLUTION:</span> UNIFIED CRYPTO PLATFORM</h3>
               <p className={styles.subtitle}>100 Franklins connects qualified projects with an educated audience, creating conditions for sustainable development and long-term profits</p>
@@ -581,7 +581,7 @@ const Home = () => {
               </div>
             </div>
             <h3 className={`${styles['third-title']} ${styles.margin}`}>REVIEW OUR VISION</h3>
-            <p className={styles.subtitle}>See how we'll build the first sustainable crypto platform</p>
+            <p className={styles.subtitle}>See how we&quot;ll build the first sustainable crypto platform</p>
             <ReviewPlatformSlider/>
             <a className={styles['schedule-btn']}>Request Platform Demo</a>
           </div>
@@ -767,7 +767,7 @@ const Home = () => {
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}>CONSERVATIVE PATH TO UNICORN</h3>
               <p className={styles['numbers-title']}>0.005%</p>
-              <p className={styles.subtitle}>That's all we need from our existing audience base</p>
+              <p className={styles.subtitle}>That&quot;s all we need from our existing audience base</p>
               <div className={styles['single-card']}>
                 <div className={styles['calculates']}>
                   <p className={styles['numbers-title']}>50’000 <span>Users</span></p>
@@ -839,7 +839,7 @@ const Home = () => {
                         14+ years in entrepreneurship, digital marketing, online education & 6+ years of expertise in Web3 marketing
                         </p>
                         <p>Former Founder & CEO of Marketing Gamers – built from scratch over 12 years into a 7-figure digital marketing holding with expertise in 100+ niches and 10,000+ clients</p>
-                        <p>Author of the book "Client Generator", a winner of the Book Oscar</p>
+                        <p>Author of the book &quot;Client Generator&quot;, a winner of the Book Oscar</p>
                       </div>
                     </div>
                     <div className={styles['team-group-item']}>
@@ -854,7 +854,7 @@ const Home = () => {
                         12+ years expertise in Crypto & Ed-Tech
                         </p>
                         <p>Architect of an app for crypto bots and automated sales funnels, leveraging expertise from Marketing Gamers, whose products served over 100,000 users</p>
-                        <p>Founded & scaled e-commerce/edu businesses with focus on automation & int'l expansion</p>
+                        <p>Founded & scaled e-commerce/edu businesses with focus on automation & int&quot;l expansion</p>
                       </div>
                     </div>
                   </div>
@@ -930,7 +930,7 @@ const Home = () => {
                   <Image className={styles['member-img']} src='/assets/img/andrii.png' width={150} height={136}/>
                   <p className={styles['member-title']}>ANDRII<br/>  KHANTIL</p>
                   <div className={styles['member-desc']}>
-                    <p>Strategic Legal Adviser with 20+ years experience in investment structuring. Head of Legal at CyberInnovate LLC, leading Unicorn Nest's legal operations. Expert in startup acceleration and VC programs, supported 500+ projects. USAID programs mentor and guest lecturer for social entrepreneurship initiatives</p>
+                    <p>Strategic Legal Adviser with 20+ years experience in investment structuring. Head of Legal at CyberInnovate LLC, leading Unicorn Nest&quot;s legal operations. Expert in startup acceleration and VC programs, supported 500+ projects. USAID programs mentor and guest lecturer for social entrepreneurship initiatives</p>
                   </div>
                 </div>
                 </div>
