@@ -72,8 +72,8 @@ const Sidebar = () => {
             <p className={styles['banner-note']}>Updates coming soon</p>
             <p className={styles['banner-title']}>Educational platform</p>
         </div> */}
-        <a className={`${styles['banner-item']}`}></a>
-        <a className={`${styles['banner-item']}`}></a>
+        <a href='https://x.com/crypto100f' target='_blank' className={`${styles['banner-item']}`}></a>
+        <a href='https://www.linkedin.com/company/100f' target='_blank' className={`${styles['banner-item']}`}></a>
         <a className={`${styles['banner-item']}`}></a>
         <a className={`${styles['banner-item']}`}></a>
         <a className={`${styles['banner-item']}`}></a>

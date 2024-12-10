@@ -19,14 +19,20 @@ const MySwal = withReactContent(Swal);
 
 const Home = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const [showAdd, setShowAdd] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       // Если прокрутили больше чем на 100px
       if (window.scrollY > 100) {
         setIsSticky(true);
-      } else {
+      }else {
         setIsSticky(false);
+      }
+      if (window.scrollY >= 500){
+        setShowAdd(true);
+      }else {
+        setShowAdd(false);
       }
     };
 
@@ -147,7 +153,7 @@ const Home = () => {
 
   return (
     <>
-      <div id='add' className={styles.add}>
+      <div id='add' className={`${styles.add} ${showAdd ? styles.show : ''}`}>
         <button onClick={(e)=>handleRemoveItem(e, 'add-popup')} className={styles['remove-btn']}></button>
        <div className={styles['add-desc']}>
         <h3 className={styles['add-title']}>INSIGHTS FROM VENTURE VETERANS</h3>
@@ -176,7 +182,7 @@ const Home = () => {
               <h1 className={styles["main-title"]}>100 Franklins&quot; Journey <br/>to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers,<br/> Not Promises</h1>
               <h1 className={`${styles["main-title"]} ${styles.mobile}`}>100 Franklins&quot; Journey <br/> to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers, Not Promises</h1>
               <p className={styles.subtitle}>We are building a unified platform <br/>connecting qualified Web3 projects <br/>with an educated audience</p>
-              <a className={styles['schedule-btn']}>Schedule Demo</a>
+              <Link to="contacts" smooth={true} duration={700} className={styles['schedule-btn']}>Schedule Demo</Link>
             </div>
             
         </div>
@@ -190,6 +196,15 @@ const Home = () => {
         <span className={styles['section-marker']}></span>
           <svg className={styles['marker-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="105" viewBox="0 0 2 105" fill="none">
           <line x1="1" y1="4.37114e-08" x2="0.999995" y2="105" stroke="#FF6054" stroke-width="2" stroke-dasharray="2 2"/>
+          </svg>
+          <svg className={styles['central-marker-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="522" viewBox="0 0 2 522" fill="none">
+            <path d="M1 0.5L1 317.5M0.999995 522L0.999995 471" stroke="url(#paint0_linear_1_1538)" stroke-width="2" stroke-dasharray="2 2"/>
+            <defs>
+            <linearGradient id="paint0_linear_1_1538" x1="0.999986" y1="0.5" x2="1.00001" y2="541.5" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#FF6054"/>
+            <stop offset="1" stop-color="#23FFBE"/>
+            </linearGradient>
+            </defs>
           </svg>
         <h1 className={styles['main-title']}>GLOBAL PROBLEM</h1>
         <div  className={styles['global-problem-wrapper']}>
@@ -583,7 +598,7 @@ const Home = () => {
             <h3 className={`${styles['third-title']} ${styles.margin}`}>REVIEW OUR VISION</h3>
             <p className={styles.subtitle}>See how we&quot;ll build the first sustainable crypto platform</p>
             <ReviewPlatformSlider/>
-            <a className={styles['schedule-btn']}>Request Platform Demo</a>
+            <Link smooth={true} duration={700} to="contacts" className={styles['schedule-btn']}>Request Platform Demo</Link>
           </div>
         </div>
       </motion.section>
@@ -818,8 +833,12 @@ const Home = () => {
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}>MULTIPLYING <span className={styles['text-gradient']}>UNICORN</span> STATUS</h3>
               <Image className={styles.chart} src='/assets/img/chart.png' width={575} height={250}/>
-                <p className={styles.subtitle}>Each new channel multiplies our reach & valuation</p>
-                
+              <p className={styles.subtitle}>Each new channel multiplies our reach & valuation</p>
+              <div className={styles['charts-container']}>
+                <Image src='/assets/img/Group48095381.png' width={322} height={248}/>
+                <Image src='/assets/img/Group48095382.png' width={246} height={248}/>
+                <Image src='/assets/img/Group48095381-1.png' width={312} height={248}/>
+              </div>
             </div>
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}>Unstoppable 100F team</h3>
@@ -845,7 +864,7 @@ const Home = () => {
                     <div className={styles['team-group-item']}>
                       <Image className={styles['member-img']} src='/assets/img/ksander.png' width={150} height={136}/>
                       <p className={styles['member-title']}>Aleksandr Yakimtsou, CPO</p>
-                      <a className={styles['member-link']} href='https://www.linkedin.com/in/kirulanov/' target='_blank'>
+                      <a className={styles['member-link']} href='https://www.linkedin.com/in/ksanderkim/' target='_blank'>
                         <Image src='/assets/img/icons/linkedin.png' width={14} height={14}/>
                         @ksanderkim
                       </a>
@@ -865,7 +884,7 @@ const Home = () => {
                     <div className={styles['team-group-item']}>
                       <Image className={styles['member-img']} src='/assets/img/alex.png' width={150} height={136}/>
                       <p className={styles['member-title']}>Alex Pomelnikov, Phd CFO</p>
-                      <a className={styles['member-link']} href='https://www.linkedin.com/in/kirulanov/' target='_blank'>
+                      <a className={styles['member-link']} href='https://www.linkedin.com/in/apomelnikov/' target='_blank'>
                         <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
                         @apomelnikov
                       </a>
@@ -961,23 +980,7 @@ const Home = () => {
                 <Image src='/assets/img/Verizon.png' width={62} height={13}/>
               </div>
             </div>
-
-              
-
-
-              <TeamSlider/>
-
-
-
-
-
-
-
-
-
-
-
-
+            <TeamSlider/>
             <div className={styles['platform-roadmap']}>
                 <div className={styles.inner}>
                     <h2 className={styles["main-title"]}>100F Platform Roadmap</h2>
@@ -1229,8 +1232,8 @@ const Home = () => {
                             </ul>
                         </div>
                     </div>
-                    <Link className={`${styles['schedule-btn']}`} to="contacts" smooth={true} duration={500}>
-                        Become an Early Adopter
+                    <Link  className={`${styles['schedule-btn']}`} to="contacts" smooth={true} duration={500}>
+                      Request Investment Deck
                     </Link>
                     <p className={styles.note}>
                         By registering now, you gain early access to a platform that will change the game in the cryptocurrencies world

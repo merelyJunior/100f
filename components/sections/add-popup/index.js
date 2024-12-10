@@ -80,7 +80,7 @@ const AddPopup = ({ closePopup }) => {
               <h4 className={styles['content-title']}>
                 Expert Endorsement
               </h4>
-              <Image src='/assets/img/video.png' width={521} height={293}  />
+              <iframe width="521" height="293" src="https://www.youtube.com/embed/NLhaTzYasYY?si=4MdjETM-kycf6Ewa&hl=en" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
             <span onClick={handleNext} className={styles["arrow-right"]}>
             </span>

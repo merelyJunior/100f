@@ -13,7 +13,7 @@ const Carousel = () => {
   const items = [
     { id: 1, src: "/assets/img/Rectangle40.png" },
     { id: 2, src: "/assets/img/Rectangle39.png" },
-    { id: 3, src: "/assets/img/Rectangle39.png" }
+    { id: 3, src: "/assets/img/Rectangle411.png" }
   ];
 
   const [activeIndex, setActiveIndex] = useState(1); // Центральный элемент по умолчанию
