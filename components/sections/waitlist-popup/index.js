@@ -96,6 +96,9 @@ const PopupWaitlist = () => {
             <button id="submitBtn" type="submit" className={styles['mailing-form-btn']}>Become An Early Adopter</button>
             {status && <p>{status}</p>}
           </div>
+          <p className={styles.noteForm}>
+              By registering now, you gain early access to a platform that will change the game in the cryptocurrencies world
+          </p>
         </form>
         <Image src="/assets/img/form-franklin.png" alt="franklins" width={429} height={373}/>
       </div>

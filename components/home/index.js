@@ -156,8 +156,8 @@ const Home = () => {
       <div id='add' className={`${styles.add} ${showAdd ? styles.show : ''}`}>
         <button onClick={(e)=>handleRemoveItem(e, 'add-popup')} className={styles['remove-btn']}></button>
        <div className={styles['add-desc']}>
-        <h3 className={styles['add-title']}>INSIGHTS FROM VENTURE VETERANS</h3>
-        <button className={styles['show-add-btn']} onClick={()=>handleShowPopup()}>See what industry legends say about us</button>
+        <h3 className={styles['add-title']}>INSIGHTS FROM VENTURE EXPERTS</h3>
+        <button className={styles['show-add-btn']} onClick={()=>handleShowPopup()}>See what the industry legend says about us</button>
         <div className={styles['add-logos']}>
           <Image src='/assets/img/Sony_logo1.png' width={48} height={8}/>
           <Image src='/assets/img/Microsoft_logo_(2012)1.png' width={63} height={13}/>
@@ -179,8 +179,8 @@ const Home = () => {
         <div className={styles.content}>
             <HomeSlider/>
             <div className={styles['right-side']}>
-              <h1 className={styles["main-title"]}>100 Franklins&quot; Journey <br/>to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers,<br/> Not Promises</h1>
-              <h1 className={`${styles["main-title"]} ${styles.mobile}`}>100 Franklins&quot; Journey <br/> to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers, Not Promises</h1>
+              <h1 className={styles["main-title"]}>100 Franklins&#39; Journey <br/>to <span className={styles['text-gradient']}>Unicorn Status</span>: Backed by Numbers,<br/> Not Promises</h1>
+              <h1 className={`${styles["main-title"]} ${styles.mobile}`}>100 Franklins&#39; Journey <br/> to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers, Not Promises</h1>
               <p className={styles.subtitle}>We are building a unified platform <br/>connecting qualified Web3 projects <br/>with an educated audience</p>
               <Link to="contacts" smooth={true} duration={700} className={styles['schedule-btn']}>Schedule Demo</Link>
             </div>
@@ -319,7 +319,7 @@ const Home = () => {
                 <h3 className={styles['card-title']}>70% Projects Fail</h3>
                 <ul className={styles['card-list']}>
                   <li className={styles['card-list-item']}>
-                    Can&quot;t create quality products due to speculative pressure
+                    Can&#39;t create quality products due to speculative pressure
                   </li>
                   <li className={styles['card-list-item']}>
                     Forced to focus on short-term hype
@@ -355,7 +355,7 @@ const Home = () => {
               <div className={styles['market-items']}>
                 <div className={styles['market-item']}>
                   <p>
-                    300+ Crypto Projects Launched
+                    100+ Crypto Projects Launched
                   </p>
                   <div className={styles['item-projects-list']}>
                       <div className={styles['animation-container']}>
@@ -418,7 +418,7 @@ const Home = () => {
                 </div>
                 <div className={styles['market-item']}>
                   <p>
-                  Direct Access to top management of leading exchanges <span>(ByBit, Bitget, MEXc, OKX, Bingx, Gate)</span>
+                  Direct access to top exchanges and launchpads <span>(ByBit, Gate.io, Bitget, MEXc, BingX, OKX, DAO Maker, Zelwin)</span>
                   </p>
                   <div className={styles['item-projects-list']}>
                       <div className={styles['animation-container']}>
@@ -606,8 +606,8 @@ const Home = () => {
 </svg>
           <div className={styles.content}>
             <h2 className={styles['secondary-title']}>WHAT MAKES <br></br>AN EFFECTIVE SOLUTION?</h2>
-            <p className={styles.subtitle}>Over the years, we&quot;ve crystallized our understanding of what the market truly needs</p>
-            <strong>We&quot;ve validated this by creating a manual prototype that generated $340K+ revenue in less than 12 months</strong>
+            <p className={styles.subtitle}>Over the years, we&#39;ve crystallized our understanding of what the market truly needs</p>
+            <strong>We&#39;ve validated this by creating a manual prototype that generated $340K+ revenue in less than 12 months</strong>
             <div className={styles['card-section']}> 
               <svg  className={styles['section-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="54" viewBox="0 0 2 54" fill="none">
               <path d="M1 0L1 54" stroke="url(#paint0_linear_1_1539)" stroke-width="2" stroke-dasharray="2 2"/>
@@ -744,8 +744,11 @@ const Home = () => {
                     Development Team: <br/><span> Ready to start technical implementation</span>
                     
                     </li>
+                    <li className={`${styles['card-list-item']} ${styles.mobile}`}>
+                    Platform Demo: <br/><span> Detailed video mockup of the platform functionality</span>
+                    </li>
                     <li className={styles['card-list-item']}>
-                    5-Year Strategy:<br/><span> Detailed development and growth roadmap</span>
+                    Platform Demo: <br/><span> Detailed video mockup <br/>of the platform functionality</span>
                     </li>
                   </ul>
                 </div>
@@ -755,14 +758,11 @@ const Home = () => {
                   <p className={styles['vision-subtitle']}> $265,000,000 Annual Turnover</p>
                   <p className={styles['vision-note']}>1,000,000 Total Users, 100,000 Paid Users</p>
                   <ul className={styles['card-list']}>
-                    <li className={`${styles['card-list-item']} ${styles.mobile}`}>
-                    Platform Demo: <br/><span> Detailed video mockup of the platform functionality</span>
-                    </li>
                     <li className={styles['card-list-item']}>
                       3 Patents Pending:<br/><span> Core technology IP protection</span>
                     </li>
                     <li className={styles['card-list-item']}>
-                    Platform Demo: <br/><span> Detailed video mockup <br/>of the platform functionality</span>
+                    3-Year Strategy:<br/><span> Detailed development and growth roadmap</span>
                     </li>
                   </ul>
                 </div>
@@ -770,7 +770,7 @@ const Home = () => {
               </div>
             </div>
             <h3 className={`${styles['third-title']} ${styles.margin}`}>REVIEW OUR VISION</h3>
-            <p className={styles.subtitle}>See how we&quot;ll build the first sustainable crypto platform</p>
+            <p className={styles.subtitle}>See how we&#39;ll build the first sustainable crypto platform</p>
             <ReviewPlatformSlider/>
             <Link smooth={true} duration={700} to="contacts" className={styles['schedule-btn']}>Request Platform Demo</Link>
           </div>
@@ -1021,7 +1021,7 @@ const Home = () => {
                 </p>
                   <ul className={styles['card-list']}>
                     <li className={styles['card-list-item']}>
-                    Established relationships with top management at ByBit, Gate.io, Bitget, MEXc, BingX, OKX, DAO Maker, and Zelwin
+                    Established relationships with top management at ByBit, Gate.io, Bitget, MEXc, BingX, KuCoin, OKX, DAO Maker, Zelwin
                     </li>
                   </ul>
                 </div>
@@ -1030,7 +1030,7 @@ const Home = () => {
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}>CONSERVATIVE PATH TO UNICORN</h3>
               <p className={styles['numbers-title']}>0.005%</p>
-              <p className={styles.subtitle}>That&quot;s all we need from our existing audience base</p>
+              <p className={styles.subtitle}>That&#39;s all we need from our existing audience base</p>
               <div className={styles['single-card']}>
                 <div className={styles['calculates']}>
                   <p className={styles['numbers-title']}>50’000 <span>Users</span></p>
@@ -1106,7 +1106,7 @@ const Home = () => {
                         14+ years in entrepreneurship, digital marketing, online education & 6+ years of expertise in Web3 marketing
                         </p>
                         <p>Former Founder & CEO of Marketing Gamers – built from scratch over 12 years into a 7-figure digital marketing holding with expertise in 100+ niches and 10,000+ clients</p>
-                        <p>Author of the book &quot;Client Generator&quot;, a winner of the Book Oscar</p>
+                        <p>Author of the book &#39;Client Generator&#39;, a winner of the Book Oscar</p>
                       </div>
                     </div>
                     <div className={styles['team-group-item']}>
@@ -1121,7 +1121,7 @@ const Home = () => {
                         12+ years expertise in Crypto & Ed-Tech
                         </p>
                         <p>Architect of an app for crypto bots and automated sales funnels, leveraging expertise from Marketing Gamers, whose products served over 100,000 users</p>
-                        <p>Founded & scaled e-commerce/edu businesses with focus on automation & int&quot;l expansion</p>
+                        <p>Founded & scaled e-commerce/edu businesses with focus on automation & int&#39;l expansion</p>
                       </div>
                     </div>
                   </div>
@@ -1197,7 +1197,7 @@ const Home = () => {
                   <Image className={styles['member-img']} src='/assets/img/andrii.png' width={150} height={136}/>
                   <p className={styles['member-title']}>ANDRII<br/>  KHANTIL</p>
                   <div className={styles['member-desc']}>
-                    <p>Strategic Legal Adviser with 20+ years experience in investment structuring. Head of Legal at CyberInnovate LLC, leading Unicorn Nest&quot;s legal operations. Expert in startup acceleration and VC programs, supported 500+ projects. USAID programs mentor and guest lecturer for social entrepreneurship initiatives</p>
+                    <p>Strategic Legal Adviser with 20+ years experience in investment structuring. Head of Legal at CyberInnovate LLC, leading Unicorn Nest&#39;s legal operations. Expert in startup acceleration and VC programs, supported 500+ projects. USAID programs mentor and guest lecturer for social entrepreneurship initiatives</p>
                   </div>
                 </div>
                 </div>
@@ -1483,9 +1483,6 @@ const Home = () => {
                     <Link  className={`${styles['schedule-btn']}`} to="contacts" smooth={true} duration={500}>
                       Request Investment Deck
                     </Link>
-                    <p className={styles.note}>
-                        By registering now, you gain early access to a platform that will change the game in the cryptocurrencies world
-                    </p>
                     {/* <a  onClick={showPopup} className={`${styles['schedule-btn']} ${styles['schedule-btn-mobile']}`}>Schedule a Pitch Session</a>
                     <p className={`${styles['note-mobile']} ${styles.note}`}>
                         Request a pitch session to discuss investment opportunities
@@ -1539,7 +1536,7 @@ const Home = () => {
                   Expert Team
                 </li>
                 <li className={styles['advantages-list-item']}>
-                  Top Exchange Partnership
+                  Top Partnerships
                 </li>
                 <li className={styles['advantages-list-item']}>
                   Working Prototype

@@ -105,7 +105,7 @@ const AddPopup = ({ closePopup }) => {
                   Nikolay Shkilev, PhD
                 </h3>
                 <p className={styles.subtitle}>
-                  Strategic Web 3 Advisor
+                  Strategic Web3 Advisor
                 </p>
                 <ul className={styles['popup-list']}>
                   <li className={styles['popup-list-item']}>

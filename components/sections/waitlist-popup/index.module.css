@@ -71,7 +71,6 @@
     font-weight: 400;
     background: #FFF04B;
     color: #000;
-    margin-bottom: 60px;
 }
 .mailing-form-btn::after {
     content: '';
@@ -136,6 +135,19 @@
 .note.mobile{
     display: none;
 }
+.noteForm{
+max-width: 380px;
+margin-top: 15px;
+  margin-bottom: 60px;
+  line-height: 135%;
+  font-size: 12px;
+  text-align: left;
+  color: #c0c0c0;
+  font-weight: 100;
+}
+
+
+
 @media screen and (max-width: 1100px) {
     .main-title{
         max-width: 440px;

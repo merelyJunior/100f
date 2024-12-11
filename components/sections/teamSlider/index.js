@@ -49,7 +49,7 @@ const TeamSlider = () => {
                 14+ years in entrepreneurship, digital marketing, online education & 6+ years of expertise in Web3 marketing
                 </p>
                 <p>Former Founder & CEO of Marketing Gamers – built from scratch over 12 years into a 7-figure digital marketing holding with expertise in 100+ niches and 10,000+ clients</p>
-                <p>Author of the book &quot;Client Generator&quot;, a winner of the Book Oscar</p>
+                <p>Author of the book &#39;Client Generator&#39;, a winner of the Book Oscar</p>
               </div>
             </SwiperSlide>
             <SwiperSlide className={styles['team-group-item']}>
@@ -64,7 +64,7 @@ const TeamSlider = () => {
                 12+ years expertise in Crypto & Ed-Tech
                 </p>
                 <p>Architect of an app for crypto bots and automated sales funnels, leveraging expertise from Marketing Gamers, whose products served over 100,000 users</p>
-                <p>Founded & scaled e-commerce/edu businesses with focus on automation & int&quot;l expansion</p>
+                <p>Founded & scaled e-commerce/edu businesses with focus on automation & int&#39;l expansion</p>
               </div>
             </SwiperSlide>
         
@@ -180,7 +180,7 @@ const TeamSlider = () => {
             <Image className={styles['member-img']} src='/assets/img/andrii.png' width={150} height={136}/>
             <p className={styles['member-title']}>ANDRII<br/>  KHANTIL</p>
             <div className={styles['member-desc']}>
-              <p>Strategic Legal Adviser with 20+ years experience in investment structuring. Head of Legal at CyberInnovate LLC, leading Unicorn Nest&quot;s legal operations. Expert in startup acceleration and VC programs, supported 500+ projects. USAID programs mentor and guest lecturer for social entrepreneurship initiatives</p>
+              <p>Strategic Legal Adviser with 20+ years experience in investment structuring. Head of Legal at CyberInnovate LLC, leading Unicorn Nest&#39;s legal operations. Expert in startup acceleration and VC programs, supported 500+ projects. USAID programs mentor and guest lecturer for social entrepreneurship initiatives</p>
             </div>
           </SwiperSlide>
         </Swiper>

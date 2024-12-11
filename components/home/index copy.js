@@ -70,7 +70,7 @@ const Home = () => {
         <div className={styles.content}>
             <HomeSlider/>
             <div className={styles['right-side']}>
-              <h1 className={styles["main-title"]}>100 Franklins&quot; Journey <br/>to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers,<br/> Not Promises</h1>
+              <h1 className={styles["main-title"]}>100 Franklins&#39; Journey <br/>to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers,<br/> Not Promises</h1>
               <p className={styles.subtitle}>We are building a unified platform <br/>connecting qualified Web3 projects <br/>with an educated audience</p>
               <a className={styles['schedule-btn']}>Schedule Demo</a>
             </div>
@@ -111,7 +111,7 @@ const Home = () => {
                 <h3 className={styles['card-title']}>70% Projects Fail</h3>
                 <ul className={styles['card-list']}>
                   <li className={styles['card-list-item']}>
-                    Can&quot;t create quality products due to speculative pressure
+                    Can&#39;t create quality products due to speculative pressure
                   </li>
                   <li className={styles['card-list-item']}>
                     Forced to focus on short-term hype
@@ -202,8 +202,8 @@ const Home = () => {
           </svg>
           <div className={styles.content}>
             <h2 className={styles['secondary-title']}>WHAT MAKES <br></br>AN EFFECTIVE SOLUTION?</h2>
-            <p className={styles.subtitle}>Over the years, we&quot;ve crystallized our understanding of what the market truly needs</p>
-            <strong>We&quot;ve validated this by creating a manual prototype that generated $340K+ revenue in less than 12 months</strong>
+            <p className={styles.subtitle}>Over the years, we&#39;ve crystallized our understanding of what the market truly needs</p>
+            <strong>We&#39;ve validated this by creating a manual prototype that generated $340K+ revenue in less than 12 months</strong>
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}><span>THE SOLUTION:</span> UNIFIED CRYPTO PLATFORM</h3>
               <p className={styles.subtitle}>100 Franklins connects qualified projects with an educated audience, creating conditions for sustainable development and long-term profits</p>
@@ -274,7 +274,7 @@ const Home = () => {
               </div>
             </div>
             <h3 className={styles['third-title']}>REVIEW OUR VISION</h3>
-            <p className={styles.subtitle}>See how we&quot;ll build the first sustainable crypto platform</p>
+            <p className={styles.subtitle}>See how we&#39;ll build the first sustainable crypto platform</p>
             <ReviewPlatformSlider/>
             <a className={styles['schedule-btn']}>Request Platform Demo</a>
           </div>
@@ -389,7 +389,7 @@ const Home = () => {
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}>CONSERVATIVE PATH TO UNICORN</h3>
               <p className={styles['numbers-title']}>0.005%</p>
-              <p className={styles.subtitle}>That&quot;s all we need from our existing audience base</p>
+              <p className={styles.subtitle}>That&#39;s all we need from our existing audience base</p>
               <div className={styles['single-card']}>
                 <div className={styles['calculates']}>
                   <p className={styles['numbers-title']}>50’000 <span>Users</span></p>
@@ -403,7 +403,7 @@ const Home = () => {
             </div>
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}>AND THAT’S JUST THE BEGINNING</h3>
-                <p className={styles.subtitle}>After reaching unicorn status, we&quot;ll multiply our growth through additional channels</p>
+                <p className={styles.subtitle}>After reaching unicorn status, we&#39;ll multiply our growth through additional channels</p>
                 <div className={styles['cards-unicorn']}>
                 <div className={styles.card}>
                   <h3 className={styles['card-title']}>GROWTH CHANNELS</h3>

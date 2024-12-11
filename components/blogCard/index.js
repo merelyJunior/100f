@@ -27,7 +27,7 @@ const BlogCard = ({ post, gridView, relatedPosts }) => {
           '&amp;': '&',
           '&lt;': '<',
           '&gt;': '>',
-          '&quot;': '"',
+          '&#39;': '"',
           '&apos;': "'"
         };
   

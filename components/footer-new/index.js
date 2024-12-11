@@ -13,7 +13,7 @@ const Footer = () => {
         
       </div>
       <div>
-          <p className={styles.copyright}>The unified platform connecting qualified web3 projects with a knowledgeable audience</p>
+          <p className={styles.copyright}>The unified platform connecting qualified Web3 projects with a knowledgeable audience</p>
       </div>
     </footer>
   );
