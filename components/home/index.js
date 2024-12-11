@@ -995,6 +995,7 @@ const Home = () => {
             <p className={styles.subtitle}>We already have access to our target audience</p>
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}>OUR WARM AUDIENCE BASE</h3>
+             
               <div className={styles.cards}>
                 <div className={styles.card}>
                   <span className={styles['card-note']}>USERS</span>
@@ -1029,6 +1030,10 @@ const Home = () => {
             </div>
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}>CONSERVATIVE PATH TO UNICORN</h3>
+              <svg  className={styles["section-line"]} xmlns="http://www.w3.org/2000/svg" width="3" height="72" viewBox="0 0 3 72" fill="none">
+              <path d="M2 1L1 71" stroke="#FFDF2C" stroke-width="2" stroke-dasharray="2 2"/>
+              </svg>
+             
               <p className={styles['numbers-title']}>0.005%</p>
               <p className={styles.subtitle}>That&#39;s all we need from our existing audience base</p>
               <div className={styles['single-card']}>
@@ -1044,6 +1049,9 @@ const Home = () => {
             </div>
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}>AND THAT’S JUST THE BEGINNING</h3>
+              <svg  className={styles["section-line"]} xmlns="http://www.w3.org/2000/svg" width="3" height="72" viewBox="0 0 3 72" fill="none">
+              <path d="M2 1L1 71" stroke="#FFDF2C" stroke-width="2" stroke-dasharray="2 2"/>
+              </svg>
                 <p className={styles.subtitle}>Multiplying our growth through additional channels together with warm audience base engagement</p>
                 <div className={styles['cards-unicorn']}>
                 <div className={styles.card}>
@@ -1080,6 +1088,9 @@ const Home = () => {
             </div>
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}>MULTIPLYING <span className={styles['text-gradient']}>UNICORN</span> STATUS</h3>
+              <svg  className={styles["section-line"]} xmlns="http://www.w3.org/2000/svg" width="3" height="72" viewBox="0 0 3 72" fill="none">
+              <path d="M2 1L1 71" stroke="#FFDF2C" stroke-width="2" stroke-dasharray="2 2"/>
+              </svg>
               <Image className={styles.chart} src='/assets/img/chart.png' width={575} height={250}/>
               <p className={styles.subtitle}>Each new channel multiplies our reach & valuation</p>
               <div className={styles['charts-container']}>
@@ -1090,6 +1101,9 @@ const Home = () => {
             </div>
             <div className={styles['card-section']}>
               <h3 className={styles['third-title']}>Unstoppable 100F team</h3>
+              <svg  className={styles["section-line"]} xmlns="http://www.w3.org/2000/svg" width="3" height="72" viewBox="0 0 3 72" fill="none">
+              <path d="M2 1L1 71" stroke="#FFDF2C" stroke-width="2" stroke-dasharray="2 2"/>
+              </svg>
               <div>
                 <div className={styles['team-group']}>
                   <h3 className={styles['team-title']}>Founders</h3>
@@ -1131,7 +1145,7 @@ const Home = () => {
                   <div>
                     <div className={styles['team-group-item']}>
                       <Image className={styles['member-img']} src='/assets/img/alex.png' width={150} height={136}/>
-                      <p className={styles['member-title']}>Alex Pomelnikov, Phd CFO</p>
+                      <p className={styles['member-title']}>Alex Pomelnikov, Phd, CFO</p>
                       <a className={styles['member-link']} href='https://www.linkedin.com/in/apomelnikov/' target='_blank'>
                         <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
                         @apomelnikov
@@ -1143,7 +1157,7 @@ const Home = () => {
                     </div>
                     <div className={styles['team-group-item']}>
                       <Image className={styles['member-img']} src='/assets/img/vadim.png' width={150} height={136}/>
-                      <p className={styles['member-title']}>Vadim Golubtsov COO</p>
+                      <p className={styles['member-title']}>Vadim Golubtsov, COO</p>
                       <div className={styles['member-desc']}>
                         <p>16+ years of expertise in IT, with experience architecting and leading high-performance teams to build IT solutions for enterprises and SMBs across MarTech, EdTech, FinTech, HR, and Web3 in the USA and internationally. Formerly with Hewlett-Packard, certified HP Instructor, IT Service Manager, ITIL Expert</p>
                       </div>
@@ -1153,7 +1167,7 @@ const Home = () => {
                   <div className={styles['team-group-item']}>
                     <Image className={styles['member-img']} src='/assets/img/igor.png' width={150} height={136}/>
                     <div>
-                      <p className={styles['member-title']}>Igor Jalenco <br/>
+                      <p className={styles['member-title']}>Igor Jalenco, <br/>
                       CBDO</p>
                       <div className={styles['member-desc']}>
                         <p>13+ years expertise in EdTech, Marketing & StartUps, managed corporate education programs for IT companies with 300+ employees valued at $500M+. Led growth of international EdTech business to 5 countries (UAE, KSA, Kazakhstan, Ukraine, Azerbaijan), reaching 14K+ students. As Project Lead, successfully launched and scaled digital projects MySoul.help and Smartexpert.net from scratch</p>
@@ -1170,10 +1184,10 @@ const Home = () => {
                 <div className={styles['team-group-item']}>
                   <Image className={styles['member-img']} src='/assets/img/jack.png' width={150} height={136}/>
                   <p className={styles['member-title']}>Dr. Jack<br/> Torobin</p>
-                  {/* <a className={styles['member-link']} href='https://www.linkedin.com/in/kirulanov/' target='_blank'>
+                  <a className={styles['member-link']} href='https://www.linkedin.com/in/jtorobin/' target='_blank'>
                     <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
                     @jtorobin
-                  </a> */}
+                  </a>
                   <div className={styles['member-desc']}>
                     <p>
                     PhD in Communications and Psychology, 30+ years advising Fortune 500 companies (Microsoft, eBay, Sony Interactive) and startups. Pioneer in digital media and IoT, led successful exits including iKIT (recognized by T3 Magazine as top 10 business device)</p>
@@ -1182,6 +1196,10 @@ const Home = () => {
                 <div className={styles['team-group-item']}>
                   <Image className={styles['member-img']} src='/assets/img/yaroslav.png' width={150} height={136}/>
                   <p className={styles['member-title']}>Yaroslav Yaroslavskiy</p>
+                  <a className={styles['member-link']} href='https://www.linkedin.com/in/yaroslav-yaroslavskiy/' target='_blank'>
+                    <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
+                    @yaroslav-yaroslavskiy
+                  </a>
                   <div className={styles['member-desc']}>
                     <p>BD Adviser, Ex. Co-Founder & Shareholder UPSWOT, Mentor at Google for Startups, Visa Foundation</p>
                   </div>
@@ -1196,8 +1214,12 @@ const Home = () => {
                 <div className={styles['team-group-item']}>
                   <Image className={styles['member-img']} src='/assets/img/andrii.png' width={150} height={136}/>
                   <p className={styles['member-title']}>ANDRII<br/>  KHANTIL</p>
+                  <a className={styles['member-link']} href='https://www.linkedin.com/in/khantil-andrii-570a406/' target='_blank'>
+                    <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
+                    @khantil-andrii
+                  </a>
                   <div className={styles['member-desc']}>
-                    <p>Strategic Legal Adviser with 20+ years experience in investment structuring. Head of Legal at CyberInnovate LLC, leading Unicorn Nest&#39;s legal operations. Expert in startup acceleration and VC programs, supported 500+ projects. USAID programs mentor and guest lecturer for social entrepreneurship initiatives</p>
+                    <p>Strategic Legal Adviser with 20+ years experience in investment structuring. Head of Legal at CyberInnovate LLC, leading Unicorn Nest&#39;s legal operations. Expert in startup acceleration and VC programs, supported 500+ projects</p>
                   </div>
                 </div>
                 </div>
@@ -1539,7 +1561,7 @@ const Home = () => {
                   Top Partnerships
                 </li>
                 <li className={styles['advantages-list-item']}>
-                  Working Prototype
+                  Working Manual Prototype
                 </li>
               </ul>
             </Element>

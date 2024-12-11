@@ -617,6 +617,35 @@ margin-right: 25px;
   height: revert-layer;
 }
 
+.consumers .card-section:nth-of-type(2) .section-line,
+.consumers .card-section:nth-of-type(3) .section-line,
+.consumers .card-section:nth-of-type(4) .section-line,
+.consumers .card-section:nth-of-type(5) .section-line{
+  position: absolute;
+  top: -71px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: revert-layer;
+
+}
+.consumers .card-section:nth-of-type(4) .section-line{
+  top: -75px;
+}
+
+.consumers .card-section:nth-of-type(5){
+ position: relative;
+}
+
+.consumers .card-section:nth-of-type(2),
+.consumers .card-section:nth-of-type(3),
+.consumers .card-section:nth-of-type(4),
+.consumers .card-section:nth-of-type(5){
+  overflow: visible;
+  margin-top: 70px;
+}
+.consumers .card-section:nth-of-type(4){
+  margin-top: 50px;
+}
 .exeptional-solution .cards{
   margin-top: 25px;
   display: flex;
@@ -1068,18 +1097,18 @@ margin-right: 25px;
 }
 .team-group:nth-child(1) > div, 
 .team-group:nth-child(2) > div,
-.team-group:nth-child(3) > div {
+.team-group:nth-child(4) > div {
   display: flex;
   justify-content: space-between;
 }
-.team-group:nth-child(3){
+.team-group:nth-child(4){
   margin-top: 17px;
 }
-.team-group:nth-child(3) .team-group-item{
+.team-group:nth-child(4) .team-group-item{
   max-width: 190px;
   width: 100%;
 }
-.team-group:nth-child(3) .team-group-item:not(:last-child){
+.team-group:nth-child(4) .team-group-item:not(:last-child){
   margin-right: 12px;
 }
 .team-group-item{
@@ -1527,6 +1556,9 @@ margin-bottom: 20px;
 }
 
 @media screen and (max-width: 1260px) {
+  .consumers .card-section:nth-of-type(5) .section-line{
+    display: none;
+  }
     .global-problem .content{
         padding-left: 10px;
         padding-right: 10px;
@@ -1895,16 +1927,16 @@ margin-bottom: 20px;
     width: 100%;
     max-width: unset;
    }
-  .team-group:nth-child(3) > div{
+  .team-group:nth-child(4) > div{
    flex-wrap: wrap;
    justify-content: flex-start;
   
   }
-  .team-group:nth-child(3) .team-group-item{
+  .team-group:nth-child(4) .team-group-item{
     width: 100%;
     max-width: unset;
   }
-  .team-group:nth-child(3) .team-group-item:not(:last-child){
+  .team-group:nth-child(4) .team-group-item:not(:last-child){
     margin-bottom: 20px;
   }
   .team-group:nth-child(2) > .team-group-item:last-of-type .member-desc{

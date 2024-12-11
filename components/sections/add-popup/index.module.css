@@ -51,32 +51,89 @@
     margin-top: 22px;
     margin-bottom: 15px;
 }
-.arrow-right{
+.arrow-right {
     position: absolute;
     top: 50%;
     right: 15px;
-    transform: translateY(-50%);
+    transform: translateY(-50%); 
     background-image: url('/assets/img/icons/arrow2.png');
     background-repeat: no-repeat;
     background-size: contain;
-    width: 12px;
-    height: 12px;
-    transform: rotate(180deg);
+    width: 15px;
+    height: 15px;
     cursor: pointer;
-}
-.arrow-left{
-    position: absolute;
-    top: 47%;
-    left: 15px;
-    transform: translateY(-50%);
-    background-image: url('/assets/img/icons/arrow2.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 12px;
-    height: 12px;
-    cursor: pointer;
+    animation: moveRightLeft 2s infinite ease-in-out; 
 }
 
+.arrow-left {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%) rotate(180deg); 
+    background-image: url('/assets/img/icons/arrow2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    animation: moveLeftRight 2s infinite ease-in-out; 
+}
+.imagePopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 20px;
+  }
+  
+  .imagePopupContent {
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    max-width: 25vw; 
+    max-height: 90vh; 
+    overflow: hidden; 
+  }
+  .imagePopupContent .custom-close{
+    background-image: url('/assets/img/icons/close-b.png');
+  }
+  
+  .imagePopup img {
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain; 
+  }
+@keyframes moveLeftRight {
+    0% {
+      transform: translateX(0) translateY(-50%) rotate(180deg); 
+    }
+    50% {
+      transform: translateX(-10px) translateY(-50%) rotate(180deg);
+    }
+    100% {
+      transform: translateX(0) translateY(-50%) rotate(180deg);
+    }
+}
+
+@keyframes moveRightLeft {
+    0% {
+      transform: translateX(0) translateY(-50%); 
+    }
+    50% {
+      transform: translateX(10px) translateY(-50%); 
+    }
+    100% {
+      transform: translateX(0) translateY(-50%);
+    }
+}
 .custom-close{
     position: absolute;
     top: 15px;

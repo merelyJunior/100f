@@ -38,33 +38,33 @@ const TeamSlider = () => {
           }}
         >
           <SwiperSlide className={styles['team-group-item']}>
-              <Image className={styles['member-img']} src='/assets/img/kir.png' width={150} height={136}/>
-              <p className={styles['member-title']}>Kir Ulanov, <br/> CEO</p>
-              <a className={styles['member-link']} href='https://www.linkedin.com/in/kirulanov/' target='_blank'>
-                <Image src='/assets/img/icons/linkedin.png' width={14} height={14}/>
-                @kirulanov
-              </a>
-              <div className={styles['member-desc']}>
-                <p>
-                14+ years in entrepreneurship, digital marketing, online education & 6+ years of expertise in Web3 marketing
-                </p>
-                <p>Former Founder & CEO of Marketing Gamers – built from scratch over 12 years into a 7-figure digital marketing holding with expertise in 100+ niches and 10,000+ clients</p>
-                <p>Author of the book &#39;Client Generator&#39;, a winner of the Book Oscar</p>
-              </div>
+                <Image className={styles['member-img']} src='/assets/img/kir.png' width={150} height={136}/>
+                <p className={styles['member-title']}>Kir Ulanov, <br/> CEO</p>
+                <a className={styles['member-link']} href='https://www.linkedin.com/in/kirulanov/' target='_blank'>
+                  <Image src='/assets/img/icons/linkedin.png' width={14} height={14}/>
+                  @kirulanov
+                </a>
+                <div className={styles['member-desc']}>
+                  <p>
+                  14+ years in entrepreneurship, digital marketing, online education & 6+ years of expertise in Web3 marketing
+                  </p>
+                  <p>Former Founder & CEO of Marketing Gamers – built from scratch over 12 years into a 7-figure digital marketing holding with expertise in 100+ niches and 10,000+ clients</p>
+                  <p>Author of the book &#39;Client Generator&#39;, a winner of the Book Oscar</p>
+                </div>
             </SwiperSlide>
             <SwiperSlide className={styles['team-group-item']}>
-              <Image className={styles['member-img']} src='/assets/img/ksander.png' width={150} height={136}/>
-              <p className={styles['member-title']}>Aleksandr Yakimtsou, CPO</p>
-              <a className={styles['member-link']} href='https://www.linkedin.com/in/kirulanov/' target='_blank'>
-                <Image src='/assets/img/icons/linkedin.png' width={14} height={14}/>
-                @ksanderkim
-              </a>
-              <div className={styles['member-desc']}>
-                <p>
-                12+ years expertise in Crypto & Ed-Tech
-                </p>
-                <p>Architect of an app for crypto bots and automated sales funnels, leveraging expertise from Marketing Gamers, whose products served over 100,000 users</p>
-                <p>Founded & scaled e-commerce/edu businesses with focus on automation & int&#39;l expansion</p>
+            <Image className={styles['member-img']} src='/assets/img/ksander.png' width={150} height={136}/>
+                      <p className={styles['member-title']}>Aleksandr Yakimtsou, CPO</p>
+                      <a className={styles['member-link']} href='https://www.linkedin.com/in/ksanderkim/' target='_blank'>
+                        <Image src='/assets/img/icons/linkedin.png' width={14} height={14}/>
+                        @ksanderkim
+                      </a>
+                      <div className={styles['member-desc']}>
+                        <p>
+                        12+ years expertise in Crypto & Ed-Tech
+                        </p>
+                        <p>Architect of an app for crypto bots and automated sales funnels, leveraging expertise from Marketing Gamers, whose products served over 100,000 users</p>
+                        <p>Founded & scaled e-commerce/edu businesses with focus on automation & int&#39;l expansion</p>
               </div>
             </SwiperSlide>
         
@@ -95,9 +95,9 @@ const TeamSlider = () => {
           }}
         >
           <SwiperSlide className={styles['team-group-item']}>
-            <Image className={styles['member-img']} src='/assets/img/alex.png' width={150} height={136}/>
-                      <p className={styles['member-title']}>Alex Pomelnikov, Phd CFO</p>
-            <a className={styles['member-link']} href='https://www.linkedin.com/in/kirulanov/' target='_blank'>
+          <Image className={styles['member-img']} src='/assets/img/alex.png' width={150} height={136}/>
+            <p className={styles['member-title']}>Alex Pomelnikov, Phd, CFO</p>
+            <a className={styles['member-link']} href='https://www.linkedin.com/in/apomelnikov/' target='_blank'>
               <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
               @apomelnikov
             </a>
@@ -107,21 +107,21 @@ const TeamSlider = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className={styles['team-group-item']}>
-            <Image className={styles['member-img']} src='/assets/img/vadim.png' width={150} height={136}/>
-            <p className={styles['member-title']}>Vadim Golubtsov COO</p>
-            <div className={styles['member-desc']}>
-              <p>16+ years of expertise in IT, with experience architecting and leading high-performance teams to build IT solutions for enterprises and SMBs across MarTech, EdTech, FinTech, HR, and Web3 in the USA and internationally. Formerly with Hewlett-Packard, certified HP Instructor, IT Service Manager, ITIL Expert</p>
-            </div>
+          <Image className={styles['member-img']} src='/assets/img/vadim.png' width={150} height={136}/>
+                      <p className={styles['member-title']}>Vadim Golubtsov, COO</p>
+                      <div className={styles['member-desc']}>
+                        <p>16+ years of expertise in IT, with experience architecting and leading high-performance teams to build IT solutions for enterprises and SMBs across MarTech, EdTech, FinTech, HR, and Web3 in the USA and internationally. Formerly with Hewlett-Packard, certified HP Instructor, IT Service Manager, ITIL Expert</p>
+                      </div>
           </SwiperSlide>
           <SwiperSlide className={styles['team-group-item']}> 
-            <Image className={styles['member-img']} src='/assets/img/igor.png' width={150} height={136}/>
-            <div>
-              <p className={styles['member-title']}>Igor Jalenco <br/>
-              CBDO</p>
-              <div className={styles['member-desc']}>
-                <p>13+ years expertise in EdTech, Marketing & StartUps, managed corporate education programs for IT companies with 300+ employees valued at $500M+. Led growth of international EdTech business to 5 countries (UAE, KSA, Kazakhstan, Ukraine, Azerbaijan), reaching 14K+ students. As Project Lead, successfully launched and scaled digital projects MySoul.help and Smartexpert.net from scratch</p>
-              </div>
-            </div>
+          <Image className={styles['member-img']} src='/assets/img/igor.png' width={150} height={136}/>
+                    <div>
+                      <p className={styles['member-title']}>Igor Jalenco, <br/>
+                      CBDO</p>
+                      <div className={styles['member-desc']}>
+                        <p>13+ years expertise in EdTech, Marketing & StartUps, managed corporate education programs for IT companies with 300+ employees valued at $500M+. Led growth of international EdTech business to 5 countries (UAE, KSA, Kazakhstan, Ukraine, Azerbaijan), reaching 14K+ students. As Project Lead, successfully launched and scaled digital projects MySoul.help and Smartexpert.net from scratch</p>
+                      </div>
+                    </div>
           </SwiperSlide>
         </Swiper>
       </div>
@@ -151,37 +151,45 @@ const TeamSlider = () => {
           }}
         >
           <SwiperSlide className={styles['team-group-item']}>
-            <Image className={styles['member-img']} src='/assets/img/jack.png' width={150} height={136}/>
-            <p className={styles['member-title']}>Dr. Jack<br/> Torobin</p>
-            {/* <a className={styles['member-link']} href='https://www.linkedin.com/in/kirulanov/' target='_blank'>
-              <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
-              @jtorobin
-            </a> */}
-            <div className={styles['member-desc']}>
-              <p>
-              PhD in Communications and Psychology, 30+ years advising Fortune 500 companies (Microsoft, eBay, Sony Interactive) and startups. Pioneer in digital media and IoT, led successful exits including iKIT (recognized by T3 Magazine as top 10 business device)</p>
-            </div>
+          <Image className={styles['member-img']} src='/assets/img/jack.png' width={150} height={136}/>
+                  <p className={styles['member-title']}>Dr. Jack<br/> Torobin</p>
+                  <a className={styles['member-link']} href='https://www.linkedin.com/in/jtorobin/' target='_blank'>
+                    <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
+                    @jtorobin
+                  </a>
+                  <div className={styles['member-desc']}>
+                    <p>
+                    PhD in Communications and Psychology, 30+ years advising Fortune 500 companies (Microsoft, eBay, Sony Interactive) and startups. Pioneer in digital media and IoT, led successful exits including iKIT (recognized by T3 Magazine as top 10 business device)</p>
+                  </div>
           </SwiperSlide>
           <SwiperSlide className={styles['team-group-item']}>
-            <Image className={styles['member-img']} src='/assets/img/yaroslav.png' width={150} height={136}/>
-            <p className={styles['member-title']}>Yaroslav Yaroslavskiy</p>
-            <div className={styles['member-desc']}>
-              <p>BD Adviser, Ex. Co-Founder & Shareholder UPSWOT, Mentor at Google for Startups, Visa Foundation</p>
-            </div>
+          <Image className={styles['member-img']} src='/assets/img/yaroslav.png' width={150} height={136}/>
+                  <p className={styles['member-title']}>Yaroslav Yaroslavskiy</p>
+                  <a className={styles['member-link']} href='https://www.linkedin.com/in/yaroslav-yaroslavskiy/' target='_blank'>
+                    <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
+                    @yaroslav-yaroslavskiy
+                  </a>
+                  <div className={styles['member-desc']}>
+                    <p>BD Adviser, Ex. Co-Founder & Shareholder UPSWOT, Mentor at Google for Startups, Visa Foundation</p>
+                  </div>
           </SwiperSlide>
           <SwiperSlide className={styles['team-group-item']}> 
-            <Image className={styles['member-img']} src='/assets/img/nikolay.png' width={150} height={136}/>
-            <p className={styles['member-title']}>NIKOLAY<br/>  SHKILEV</p>
-            <div className={styles['member-desc']}>
-              <p>Founder of Private Business Club for VCs, Zelwin Ecosystem, AR Generation, MagiScan 3D. Rated Top 3 in People of BlockChain by Forbes</p>
-            </div>
+          <Image className={styles['member-img']} src='/assets/img/nikolay.png' width={150} height={136}/>
+                  <p className={styles['member-title']}>NIKOLAY<br/>  SHKILEV, PhD</p>
+                  <div className={styles['member-desc']}>
+                    <p>Founder of Private Business Club for VCs, Zelwin Ecosystem, AR Generation, MagiScan 3D. Rated Top 3 in People of BlockChain by Forbes</p>
+                  </div>
           </SwiperSlide>
           <SwiperSlide className={styles['team-group-item']}> 
-            <Image className={styles['member-img']} src='/assets/img/andrii.png' width={150} height={136}/>
-            <p className={styles['member-title']}>ANDRII<br/>  KHANTIL</p>
-            <div className={styles['member-desc']}>
-              <p>Strategic Legal Adviser with 20+ years experience in investment structuring. Head of Legal at CyberInnovate LLC, leading Unicorn Nest&#39;s legal operations. Expert in startup acceleration and VC programs, supported 500+ projects. USAID programs mentor and guest lecturer for social entrepreneurship initiatives</p>
-            </div>
+          <Image className={styles['member-img']} src='/assets/img/andrii.png' width={150} height={136}/>
+                  <p className={styles['member-title']}>ANDRII<br/>  KHANTIL</p>
+                  <a className={styles['member-link']} href='https://www.linkedin.com/in/khantil-andrii-570a406/' target='_blank'>
+                    <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
+                    @khantil-andrii
+                  </a>
+                  <div className={styles['member-desc']}>
+                    <p>Strategic Legal Adviser with 20+ years experience in investment structuring. Head of Legal at CyberInnovate LLC, leading Unicorn Nest&#39;s legal operations. Expert in startup acceleration and VC programs, supported 500+ projects</p>
+                  </div>
           </SwiperSlide>
         </Swiper>
       </div>

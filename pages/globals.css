@@ -269,7 +269,14 @@ div:where(.swal2-container) .swal2-html-container{
 }
 
 
+.swalPopup .swal2-close {
+  color: red; 
+  transition: color 0.3s ease; 
+}
 
+.swalPopup .swal2-close:hover {
+  color: darkred; 
+}
 
 
 

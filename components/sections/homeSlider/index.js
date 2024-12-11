@@ -1,13 +1,10 @@
-
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-import React, { useState } from 'react';
-import { Swiper, SwiperSlide} from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
-import styles from'./index.module.css';
+import { useEffect, useState } from 'react';
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
+import styles from './index.module.css';
 import Image from 'next/image';
+
+const MySwal = withReactContent(Swal);
 
 const Carousel = () => {
   const items = [
@@ -17,18 +14,54 @@ const Carousel = () => {
   ];
 
   const [activeIndex, setActiveIndex] = useState(1); // Центральный элемент по умолчанию
+  const [isPaused, setIsPaused] = useState(false); // Флаг остановки таймера
+
+  useEffect(() => {
+    if (isPaused) return; // Если таймер остановлен, ничего не делаем
+
+    const interval = setInterval(() => {
+      setActiveIndex((prevIndex) => (prevIndex + 1) % items.length);
+    }, 3000);
+
+    return () => clearInterval(interval); // Очистка интервала при размонтировании
+  }, [items.length, isPaused]);
 
   const handleItemClick = (index) => {
-    setActiveIndex(index);
+    setIsPaused(true); // Останавливаем таймер
+
+    if (index === activeIndex) {
+      // Открыть увеличенное изображение в модальном окне
+      MySwal.fire({
+        html: (
+          <div>
+            <Image
+              src={items[index].src}
+              alt="Enlarged project item"
+              width={800}
+              height={400}
+              style={{ borderRadius: '10px' }}
+            />
+          </div>
+        ),
+        showCloseButton: true,
+        showConfirmButton: false,
+        customClass: {
+          popup: 'swalPopup', 
+        },
+      }).then(() => setIsPaused(false)); // Возобновляем таймер после закрытия модального окна
+    } else {
+      setActiveIndex(index); // Меняем активный элемент
+      setTimeout(() => setIsPaused(false), 3000); // Возобновляем таймер через 3 секунды
+    }
   };
 
   const getClassName = (index) => {
-    // Вычисляем смещение относительно активного индекса
     const position = (index - activeIndex + items.length) % items.length;
 
     if (position === 0) return styles.active; // Центральный элемент
     if (position === 1) return styles.next; // Следующий справа
     if (position === 2) return styles.prev; // Предыдущий слева
+    return '';
   };
 
   return (
@@ -39,7 +72,7 @@ const Carousel = () => {
           className={`${styles.item} ${getClassName(index)}`}
           onClick={() => handleItemClick(index)}
         >
-           <Image
+          <Image
             src={item.src}
             alt="project-item"
             width={165}
