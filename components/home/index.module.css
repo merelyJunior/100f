@@ -37,7 +37,7 @@
   max-width: unset;
 }
 .first-screen-card-header.sticky p{
-  max-width: 390px;
+  max-width: 490px;
   margin: 0 auto;
 }
 .first-screen-card-header a{
@@ -2249,7 +2249,7 @@ margin-bottom: 20px;
   }
   .first-screen-card-header.sticky p,
   .first-screen-card-header p{
-    max-width: 190px;
+    max-width: 255px;
     margin: 0 auto;
   }
   .global-problem,.exeptional-solution{

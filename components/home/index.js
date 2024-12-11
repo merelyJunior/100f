@@ -171,7 +171,7 @@ const Home = () => {
         className={styles["first-screen-card"]}
       >
         <div id='cardHeader' className={`${styles['first-screen-card-header']} ${isSticky ? styles.sticky : ''}`}>
-          <p>Proven path to 100X returns: <Link to="invest" smooth={true} duration={700}>See our metrics below</Link></p>
+          <p>Discover strategies with 100X-growth potential: <Link to="invest" smooth={true} duration={700}>See our metrics below</Link></p>
            {isSticky && ( <button onClick={(e)=>handleRemoveItem(e, 'card-header')} className={styles['remove-btn']}></button>)}
 
         </div>
@@ -181,7 +181,7 @@ const Home = () => {
             <div className={styles['right-side']}>
               <h1 className={styles["main-title"]}>100 Franklins&#39; Journey <br/>to <span className={styles['text-gradient']}>Unicorn Status</span>: Backed by Numbers,<br/> Not Promises</h1>
               <h1 className={`${styles["main-title"]} ${styles.mobile}`}>100 Franklins&#39; Journey <br/> to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers, Not Promises</h1>
-              <p className={styles.subtitle}>We are building a unified platform <br/>connecting qualified Web3 projects <br/>with an educated audience</p>
+              <p className={styles.subtitle}>We are building a unified platform <br/>connecting qualified Web3 projects <br/>with an knowledgeable audience</p>
               <Link to="contacts" smooth={true} duration={700} className={styles['schedule-btn']}>Schedule Demo</Link>
             </div>
             
@@ -383,6 +383,7 @@ const Home = () => {
                             <div><Image src="/assets/img/Group48095537.png" alt="chainlink" width={95} height={35}/></div>
                             <div><Image src="/assets/img/image8.png" alt="metashooter" width={95} height={35}/></div>
                             <div ><Image src="/assets/img/image6.png" alt="vaiot" width={95} height={35}/></div>
+                            <div ><Image src="/assets/img/KuCoin-logo.png" alt="vaiot" width={95} height={35}/></div>
                         </div>  
                         <div className={styles['right-animation']}>
                            
@@ -392,6 +393,7 @@ const Home = () => {
                             <div><Image src="/assets/img/Group48095537.png" alt="chainlink" width={95} height={35}/></div>
                             <div><Image src="/assets/img/image8.png" alt="metashooter" width={95} height={35}/></div>
                             <div><Image src="/assets/img/image6.png" alt="vaiot" width={95} height={35}/></div>
+                            <div ><Image src="/assets/img/KuCoin-logo.png" alt="vaiot" width={95} height={35}/></div>
                         </div>  
                       </div> 
                       <div className={styles['animation-container']}>
@@ -455,6 +457,7 @@ const Home = () => {
                             <div ><Image src="/assets/img/imagevdssvb.png" alt="biget" width={60} height={20}/></div>
                             <div><Image src="/assets/img/vxzvx.png" alt="okx" width={60} height={20}/></div>
                             <div><Image src="/assets/img/image6.png" alt="vaiot" width={95} height={35}/></div>
+                            <div ><Image src="/assets/img/KuCoin-logo.png" alt="vaiot" width={95} height={35}/></div>
                         </div>  
                        
                       </div> 
@@ -990,7 +993,7 @@ const Home = () => {
 
 
 
-          <div className={styles.content}>
+          <Element name="invest" className={styles.content}>
             <h2 className={styles['secondary-title']}>WHO WILL BUY THIS?</h2>
             <p className={styles.subtitle}>We already have access to our target audience</p>
             <div className={styles['card-section']}>
@@ -1077,7 +1080,7 @@ const Home = () => {
                     <Image  src='/assets/img/Bybit.png' width={72} height={28}/>
                     <Image  src='/assets/img/gate.png' width={121} height={34}/>
                     <Image  src='/assets/img/biget.png' width={91} height={29}/>
-                    <Image  src='/assets/img/mexc.png' width={207} height={21}/>
+                    <Image  src='/assets/img/mexc.png' width={110} height={22}/>
                     <Image  src='/assets/img/okk.png' width={80} height={22}/>
                     <Image  src='/assets/img/Bingxlogo1.png' width={96} height={28}/>
                     <Image  src='/assets/img/DAOMake2.png' width={157} height={41}/>
@@ -1206,7 +1209,7 @@ const Home = () => {
                 </div>
                 <div className={styles['team-group-item']}>
                   <Image className={styles['member-img']} src='/assets/img/nikolay.png' width={150} height={136}/>
-                  <p className={styles['member-title']}>NIKOLAY<br/>  SHKILEV</p>
+                  <p className={styles['member-title']}>NIKOLAY<br/>  SHKILEV, PhD</p>
                   <div className={styles['member-desc']}>
                     <p>Founder of Private Business Club for VCs, Zelwin Ecosystem, AR Generation, MagiScan 3D. Rated Top 3 in People of BlockChain by Forbes</p>
                   </div>
@@ -1511,7 +1514,7 @@ const Home = () => {
                     </p> */}
                 </div>
             </div>
-            <Element name="invest"  className={styles['card-section']}>
+            <div  className={styles['card-section']}>
             <h2 className={styles['secondary-title']}>READY TO JOIN OUR JOURNEY?</h2>
             <h3 className={styles['third-title']}>WHY INVEST NOW</h3>
               <div className={styles.cards}>
@@ -1564,8 +1567,8 @@ const Home = () => {
                   Working Manual Prototype
                 </li>
               </ul>
-            </Element>
-          </div>
+            </div>
+          </Element>
         </div>
       </motion.section>
       <Element name="contacts">

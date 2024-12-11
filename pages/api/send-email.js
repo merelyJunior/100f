@@ -11,17 +11,21 @@ export default async function handler(req, res) {
         pass: 'pJT9X67ag9',
       },
     });
-    const { name, email, tel } = req.body;
+    const { name, email, company, whatsApp, capacity } = req.body;
+    console.log(req.body);
+    
     let mailOptions;
-    if (name && email && tel) {
+    if (name && email && capacity && whatsApp) {
       mailOptions = {
         from: '100Fcom_Pitch <info@100f.com>',
         to: 'kir.ulanov@100f.com, admin@100f.com, info@100f.com',
-        subject: `100F.com Request for Pitch`,
+        subject: `100F.com Request Investment Deck`,
         text: `
           Name: ${name}
           Email: ${email}
-          Phone: ${tel}
+          company: ${company}
+          WhatsApp: ${whatsApp}
+          Capacity: ${capacity}
         `,
       };
     } else {
