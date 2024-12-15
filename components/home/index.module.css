@@ -957,8 +957,13 @@ margin-right: 25px;
   background-repeat: no-repeat;
   background-size: cover;
 }
-.consumers  .calculates{
+.consumers .card-section:last-child .single-card .calculates{
+
   max-width: 795px;
+  
+}
+.consumers  .calculates{
+  max-width: 684px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;

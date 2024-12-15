@@ -181,7 +181,7 @@ const Home = () => {
             <div className={styles['right-side']}>
               <h1 className={styles["main-title"]}>100 Franklins&#39; Journey <br/>to <span className={styles['text-gradient']}>Unicorn Status</span>: Backed by Numbers,<br/> Not Promises</h1>
               <h1 className={`${styles["main-title"]} ${styles.mobile}`}>100 Franklins&#39; Journey <br/> to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers, Not Promises</h1>
-              <p className={styles.subtitle}>We are building a unified platform <br/>connecting qualified Web3 projects <br/>with an knowledgeable audience</p>
+              <p className={styles.subtitle}>We are building a unified platform <br/>connecting qualified Web3 projects <br/>with a knowledgeable audience</p>
               <Link to="contacts" smooth={true} duration={700} className={styles['schedule-btn']}>Schedule Demo</Link>
             </div>
             
@@ -420,7 +420,7 @@ const Home = () => {
                 </div>
                 <div className={styles['market-item']}>
                   <p>
-                  Direct access to top exchanges and launchpads <span>(ByBit, Gate.io, Bitget, MEXc, BingX, OKX, DAO Maker, Zelwin)</span>
+                  Direct access to top exchanges and launchpads <span>(ByBit, KuCoin, Gate, Bitget, MEXc, BingX, OKX, DAO Maker, Zelwin)</span>
                   </p>
                   <div className={styles['item-projects-list']}>
                       <div className={styles['animation-container']}>
@@ -622,7 +622,7 @@ const Home = () => {
               </defs>
             </svg>
               <h3 className={styles['third-title']}><span>THE SOLUTION:</span> UNIFIED CRYPTO PLATFORM</h3>
-              <p className={styles.subtitle}>100 Franklins connects qualified projects with an educated audience, creating conditions for sustainable development and long-term profits</p>
+              <p className={styles.subtitle}>100 Franklins connects qualified projects with a educated audience, creating conditions for sustainable development and long-term profits</p>
               <div className={styles.cards}>
                 <div className={styles.card}>
                   <h3 className={styles['card-title']}>FOR PROJECT FOUNDERS</h3>
@@ -1025,7 +1025,7 @@ const Home = () => {
                 </p>
                   <ul className={styles['card-list']}>
                     <li className={styles['card-list-item']}>
-                    Established relationships with top management at ByBit, Gate.io, Bitget, MEXc, BingX, KuCoin, OKX, DAO Maker, Zelwin
+                    Established relationships with top management at ByBit, KuCoin, Gate, Bitget, MEXc, BingX, KuCoin, OKX, DAO Maker, Zelwin
                     </li>
                   </ul>
                 </div>
@@ -1084,6 +1084,7 @@ const Home = () => {
                     <Image  src='/assets/img/okk.png' width={80} height={22}/>
                     <Image  src='/assets/img/Bingxlogo1.png' width={96} height={28}/>
                     <Image  src='/assets/img/DAOMake2.png' width={157} height={41}/>
+                    <Image  src='/assets/img/KuCoin-logo2.png' width={80} height={22}/>
                   
                   </div>
                 </div>

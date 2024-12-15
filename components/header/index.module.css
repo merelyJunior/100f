@@ -349,6 +349,10 @@
     font-size: 14.89px;
     font-weight: 100;
   }
+  .waitlist-btn:hover{
+    color: #000;
+    background-color: #05E9F0;
+  }
   .waitlist-btn::before {
     content: '';
     position: absolute;
