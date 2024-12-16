@@ -1,8 +1,8 @@
 'use client'
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useRouter } from 'next/router';
+import {  useRouter } from 'next/router';
 import styles from './index.module.css';
 import PopupWaitlist from '/components/sections/waitlist-popup';
 import Swal from 'sweetalert2';
@@ -10,7 +10,9 @@ import withReactContent from 'sweetalert2-react-content';
 const MySwal = withReactContent(Swal);
 const Sidebar = () => {
 
+  const [popupOpen, setPopupOpen] = useState(false);
   const router = useRouter();
+
   const isActive = (basePath) => {
     if (basePath === '/') {
       return router.pathname === '/';
@@ -20,11 +22,15 @@ const Sidebar = () => {
 
 
   const showPopup = () => {
+    setPopupOpen(true);
+    
     MySwal.fire({
         html: <PopupWaitlist />,  
         showConfirmButton: false, 
         showCloseButton: true,  
         backdrop: true, 
+      }).then(() => {
+        setPopupOpen(false); 
       });
   };
 
@@ -36,12 +42,12 @@ const Sidebar = () => {
       </Link>
       <ul className={styles['sidebar-menu']}>
         <li className={styles['sidebar-menu__item']}>
-          <button onClick={showPopup} className={`${styles['page-button']} ${styles['waitlist-btn']}`}>
+          <button onClick={showPopup} className={`${styles['page-button']} ${isActive('/') && popupOpen ? styles.active : ''} ${styles['waitlist-btn']}`}>
             Join the Waitlist
           </button>
         </li>
         <li className={styles['sidebar-menu__item']}>
-          <Link href="/" className={`${styles['page-button']} ${isActive('/') ? styles.active : ''} ${styles['home-btn']}`}>
+          <Link href="/" className={`${styles['page-button']} ${isActive('/') && !popupOpen ? styles.active : ''} ${styles['home-btn']}`}>
             Home
           </Link>
         </li>

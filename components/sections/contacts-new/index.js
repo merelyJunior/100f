@@ -103,7 +103,7 @@ const Contacts = ({ contacts }) => {
             <div className={`${styles['error-message']} ${errors.name ? styles.active : ''}`}>{errors.name}</div>
           </div>
           <div className={styles['form-group']}>
-            <input type="email" id="email" name="email" placeholder="Email *" required />
+            <input type="email" id="email" name="email" placeholder="Email*" required />
             <div className={`${styles['error-message']} ${errors.email ? styles.active : ''}`}>{errors.email}</div>
           </div>
           <div className={styles['form-group']}>

@@ -149,10 +149,7 @@
     margin-top: 5px;
     font-size: 14px;
 }
-.waitlist-btn:hover{
-    color: #000;
-    background-color: #05E9F0;
-  }
+
 .home-btn::before {
     content: '';
     position: absolute;
@@ -164,22 +161,30 @@
     background-repeat: no-repeat;
     background-image: url('/assets/img/icons/Home_solid.png');
 }
+.waitlist-btn{
+    padding-left: 25px;
+}
 .waitlist-btn::before {
     content: '';
     position: absolute;
-    top: 9px;
+    top: 11px;
     left: 5px;
-    width: 17px;
-    height: 18px;
+    width: 14px;
+    height: 13px;
     background-size: contain;
     background-repeat: no-repeat;
     background-image: url('/assets/img/icons/Person.png');
 }
-
+.active.waitlist-btn{
+    color: #000;
+}
+.active.waitlist-btn::before {
+    background-image: url('/assets/img/icons/Person-b.png');
+}
 .active.home-btn::before {
     content: '';
     position: absolute;
-    top: 9px;
+    top: 10px;
     left: 5px;
     width: 17px;
     height: 18px;
