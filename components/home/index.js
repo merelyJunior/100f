@@ -1127,6 +1127,7 @@ const Home = () => {
               <svg  className={styles["section-line"]} xmlns="http://www.w3.org/2000/svg" width="3" height="72" viewBox="0 0 3 72" fill="none">
               <path d="M2 1L1 71" stroke="#FFDF2C" stroke-width="2" stroke-dasharray="2 2"/>
               </svg>
+              <Image className={`${styles.chart} ${styles.mobile}`} src='/assets/img/chart-m.png' width={326} height={224}/>
               <Image className={styles.chart} src='/assets/img/chart.png' width={575} height={250}/>
               <p className={styles.subtitle}>Each new channel multiplies our reach & valuation</p>
               <div className={styles['charts-container']}>
