@@ -171,20 +171,19 @@ const Home = () => {
         className={styles["first-screen-card"]}
       >
         <div id='cardHeader' className={`${styles['first-screen-card-header']} ${isSticky ? styles.sticky : ''}`}>
-          <p>Discover strategies with 100X-growth potential: <Link to="invest" smooth={true} duration={700}>See our metrics below</Link></p>
+          <p>Discover strategies with 100X-growth potential: <Link to="invest"  offset={-270} smooth={true} duration={700}>See our metrics below</Link></p>
            {isSticky && ( <button onClick={(e)=>handleRemoveItem(e, 'card-header')} className={styles['remove-btn']}></button>)}
 
         </div>
-        <Image className={`${styles['logo']} ${isSticky ? styles.sticky : ''}`}src='/assets/img/footer-logo.png' width={66} height={20}/>
+        <Image className={`${styles['logo']} ${isSticky ? styles.sticky : ''}`}src='/assets/img/footer-logo.png' width={57} height={17}/>
         <div className={styles.content}>
-            <HomeSlider/>
-            <div className={styles['right-side']}>
+            <div className={styles['left-side']}>
               <h1 className={styles["main-title"]}>100 Franklins&#39; Journey <br/>to <span className={styles['text-gradient']}>Unicorn Status</span>: Backed by Numbers,<br/> Not Promises</h1>
               <h1 className={`${styles["main-title"]} ${styles.mobile}`}>100 Franklins&#39; Journey <br/> to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers, Not Promises</h1>
               <p className={styles.subtitle}>We are building a unified platform <br/>connecting qualified Web3 projects <br/>with a knowledgeable audience</p>
               <Link to="contacts" smooth={true} duration={700} className={styles['schedule-btn']}>Schedule Demo</Link>
             </div>
-            
+            <Image className={`${styles['franklin-first-screen']}`}src='/assets/img/franklin.png' width={311} height={373}/>
         </div>
         <NewsPlugin/>
       </motion.section>
@@ -360,61 +359,74 @@ const Home = () => {
                   <div className={styles['item-projects-list']}>
                       <div className={styles['animation-container']}>
                           <div className={styles['left-animation']}>
-                              <div><Image src="/assets/img/Group48095533.png" alt="abc" width={95} height={35}/></div>
                               <div><Image src="/assets/img/imag17.png" alt="lbank" width={95} height={35}/></div>
                               <div><Image src="/assets/img/Group48095535.png" alt="bitmart" width={95} height={35}/></div>
-                              <div ><Image src="/assets/img/jjf-1.png" alt="fyzon" width={95} height={35}/></div>
-                              <div><Image src="/assets/img/Group48095532.png" alt="ton" width={95} height={35}/></div>
+                              <div><Image src="/assets/img/Group48095537.png" alt="certik" width={95} height={35}/></div>
+                              <div ><Image src="/assets/img/image11.png" alt="vaiot" width={95} height={35}/></div>
+                              <div><Image src="/assets/img/Group48095525.png" alt="mexc" width={80} height={20}/></div>
+                              <div><Image src="/assets/img/zv15.png" alt="gate" width={78} height={20}/></div>
+                              <div><Image src="/assets/img/biget1.png" alt="biget" width={78} height={20}/></div>
                           </div>  
                           <div className={styles['left-animation']}>
-                              <div><Image src="/assets/img/Group48095533.png" alt="abc" width={95} height={35}/></div>
                               <div><Image src="/assets/img/imag17.png" alt="lbank" width={95} height={35}/></div>
                               <div><Image src="/assets/img/Group48095535.png" alt="bitmart" width={95} height={35}/></div>
-                              <div ><Image src="/assets/img/jjf-1.png" alt="fyzon" width={95} height={35}/></div>
-                              <div><Image src="/assets/img/Group48095532.png" alt="ton" width={95} height={35}/></div>
+                              <div><Image src="/assets/img/Group48095537.png" alt="certik" width={95} height={35}/></div>
+                              <div ><Image src="/assets/img/image11.png" alt="vaiot" width={95} height={35}/></div>
+                              <div><Image src="/assets/img/Group48095525.png" alt="mexc" width={80} height={20}/></div>
+                              <div><Image src="/assets/img/zv15.png" alt="gate" width={78} height={20}/></div>
+                              <div><Image src="/assets/img/biget1.png" alt="biget" width={78} height={20}/></div>
                           </div>  
-                         
                       </div>
                       <div className={styles['animation-container']}>
                         <div className={styles['right-animation']}>   
-                            <div><Image src="/assets/img/Group48095529.png" alt="bitgert" width={95} height={35}/></div>
-                            <div><Image className={styles.private} src="/assets/img/Group48095531.png" alt="private" width={95} height={35}/></div>
-                            <div ><Image src="/assets/img/Grou48095530.png" alt="ontology" width={95} height={35}/></div>
-                            <div><Image src="/assets/img/Group48095537.png" alt="chainlink" width={95} height={35}/></div>
-                            <div><Image src="/assets/img/image8.png" alt="metashooter" width={95} height={35}/></div>
-                            <div ><Image src="/assets/img/image6.png" alt="vaiot" width={95} height={35}/></div>
-                            <div ><Image src="/assets/img/KuCoin-logo.png" alt="vaiot" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/image4r2.png" alt="floki" width={48} height={16}/></div>
+                          <div><Image src="/assets/img/DAOMake2.png" alt="DAOMaker" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/imageg3.png" alt="apeswap" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/image 10.png" alt="chain" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/Brickken_black.png" alt="Brickken" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/AngeLabs.png" alt="AngeLabs" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/GGEM.png" alt="GGEM" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/MagiScan.png" alt="MagiScan" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/20240723094314.png" alt="Gptwars" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/MatrixOne.png" alt="MatrixOne" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/Everreach.png" alt="Everreach" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/Xyro.png" alt="Xyro" width={95} height={35}/></div>
                         </div>  
-                        <div className={styles['right-animation']}>
-                           
-                            <div><Image src="/assets/img/Group48095529.png" alt="bitgert" width={95} height={35}/></div>
-                            <div><Image className={styles.private} src="/assets/img/Group48095531.png" alt="private" width={95} height={35}/></div>
-                            <div  ><Image src="/assets/img/Grou48095530.png" alt="ontology" width={95} height={35}/></div>
-                            <div><Image src="/assets/img/Group48095537.png" alt="chainlink" width={95} height={35}/></div>
-                            <div><Image src="/assets/img/image8.png" alt="metashooter" width={95} height={35}/></div>
-                            <div><Image src="/assets/img/image6.png" alt="vaiot" width={95} height={35}/></div>
-                            <div ><Image src="/assets/img/KuCoin-logo.png" alt="vaiot" width={95} height={35}/></div>
+                        <div className={styles['right-animation']}>   
+                          <div><Image src="/assets/img/image4r2.png" alt="floki" width={48} height={16}/></div>
+                          <div><Image src="/assets/img/DAOMake2.png" alt="DAOMaker" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/imageg3.png" alt="apeswap" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/image 10.png" alt="chain" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/Brickken_black.png" alt="Brickken" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/AngeLabs.png" alt="AngeLabs" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/GGEM.png" alt="GGEM" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/MagiScan.png" alt="MagiScan" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/20240723094314.png" alt="Gptwars" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/MatrixOne.png" alt="MatrixOne" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/Everreach.png" alt="Everreach" width={95} height={35}/></div>
+                          <div><Image src="/assets/img/Xyro.png" alt="Xyro" width={95} height={35}/></div>
                         </div>  
+                   
                       </div> 
                       <div className={styles['animation-container']}>
                           <div className={styles['left-animation']}>
-                              <div><Image src="/assets/img/vsbsx.png" alt="magiscan" width={95} height={35}/></div>
-                              <div><Image src="/assets/img/Group48095528.png" alt="bitforex" width={95} height={35}/></div>
-                            
-                              <div><Image src="/assets/img/Group48095534.png" alt="legion" width={95} height={35}/></div>
-                              <div><Image src="/assets/img/Group48095537.png" alt="sertik" width={95} height={35}/></div>
-                              <div><Image src="/assets/img/image4r2.png" alt="floki" width={95} height={35}/></div>
-                              <div><Image src="/assets/img/imageg3.png" alt="apespwap" width={95} height={35}/></div>
+                              <div><Image src="/assets/img/imag17.png" alt="lbank" width={95} height={35}/></div>
+                              <div><Image src="/assets/img/Group48095535.png" alt="bitmart" width={95} height={35}/></div>
+                              <div><Image src="/assets/img/Group48095537.png" alt="certik" width={95} height={35}/></div>
+                              <div ><Image src="/assets/img/image11.png" alt="vaiot" width={95} height={35}/></div>
+                              <div><Image src="/assets/img/Group48095525.png" alt="mexc" width={80} height={20}/></div>
+                              <div><Image src="/assets/img/zv15.png" alt="gate" width={78} height={20}/></div>
+                              <div><Image src="/assets/img/biget1.png" alt="biget" width={78} height={20}/></div>
                           </div>  
                           <div className={styles['left-animation']}>
-                              <div><Image src="/assets/img/vsbsx.png" alt="magiscan" width={95} height={35}/></div>
-                              <div><Image src="/assets/img/Group48095528.png" alt="bitforex" width={95} height={35}/></div>
-                            
-                              <div><Image src="/assets/img/Group48095534.png" alt="legion" width={95} height={35}/></div>
-                              <div><Image src="/assets/img/Group48095537.png" alt="sertik" width={95} height={35}/></div>
-                              <div><Image src="/assets/img/image4r2.png" alt="floki" width={95} height={35}/></div>
-                              <div><Image src="/assets/img/imageg3.png" alt="apespwap" width={95} height={35}/></div>
-                          </div> 
+                              <div><Image src="/assets/img/imag17.png" alt="lbank" width={95} height={35}/></div>
+                              <div><Image src="/assets/img/Group48095535.png" alt="bitmart" width={95} height={35}/></div>
+                              <div><Image src="/assets/img/Group48095537.png" alt="certik" width={95} height={35}/></div>
+                              <div ><Image src="/assets/img/image11.png" alt="vaiot" width={95} height={35}/></div>
+                              <div><Image src="/assets/img/Group48095525.png" alt="mexc" width={80} height={20}/></div>
+                              <div><Image src="/assets/img/zv15.png" alt="gate" width={78} height={20}/></div>
+                              <div><Image src="/assets/img/biget1.png" alt="biget" width={78} height={20}/></div>
+                          </div>  
                       </div>
                   </div>
                 </div>
@@ -426,25 +438,22 @@ const Home = () => {
                       <div className={styles['animation-container']}>
                           <div className={styles['left-animation']}>
                               <div><Image src="/assets/img/cbxx.png" alt="bing" width={60} height={20}/></div>
-                              <div><Image src="/assets/img/Group48095525.png" alt="mexc" width={60} height={20}/></div>
                               <div><Image src="/assets/img/Group48095526.png" alt="bybit" width={60} height={20}/></div>
                               <div ><Image src="/assets/img/imagevdssvb.png" alt="biget" width={60} height={20}/></div>
                               <div><Image src="/assets/img/vxzvx.png" alt="okx" width={60} height={20}/></div>
-                              <div><Image src="/assets/img/zv15.png" alt="gate" width={78} height={20}/></div>
                           </div>  
                           <div className={styles['left-animation']}>
                               <div><Image src="/assets/img/cbxx.png" alt="bing" width={60} height={20}/></div>
-                              <div><Image src="/assets/img/Group48095525.png" alt="mexc" width={60} height={20}/></div>
                               <div><Image src="/assets/img/Group48095526.png" alt="bybit" width={60} height={20}/></div>
                               <div ><Image src="/assets/img/imagevdssvb.png" alt="biget" width={60} height={20}/></div>
                               <div><Image src="/assets/img/vxzvx.png" alt="okx" width={60} height={20}/></div>
-                              <div><Image src="/assets/img/zv15.png" alt="gate" width={60} height={20}/></div>
                           </div>  
+                        
                       </div>
                       <div className={styles['animation-container']}>
                         <div className={styles['right-animation']}>   
                             <div><Image src="/assets/img/cbxx.png" alt="bing" width={60} height={20}/></div>
-                            <div><Image src="/assets/img/Group48095525.png" alt="mexc" width={60} height={20}/></div>
+                            <div><Image src="/assets/img/Group48095525.png" alt="mexc" width={80} height={20}/></div>
                             <div><Image src="/assets/img/Group48095526.png" alt="bybit" width={60} height={20}/></div>
                             <div ><Image src="/assets/img/imagevdssvb.png" alt="biget" width={60} height={20}/></div>
                             <div><Image src="/assets/img/vxzvx.png" alt="okx" width={60} height={20}/></div>
@@ -452,7 +461,7 @@ const Home = () => {
                         </div>  
                         <div className={styles['right-animation']}>   
                             <div><Image src="/assets/img/cbxx.png" alt="bing" width={60} height={20}/></div>
-                            <div><Image src="/assets/img/Group48095525.png" alt="mexc" width={60} height={20}/></div>
+                            <div><Image src="/assets/img/Group48095525.png" alt="mexc" width={80} height={20}/></div>
                             <div><Image src="/assets/img/Group48095526.png" alt="bybit" width={60} height={20}/></div>
                             <div ><Image src="/assets/img/imagevdssvb.png" alt="biget" width={60} height={20}/></div>
                             <div><Image src="/assets/img/vxzvx.png" alt="okx" width={60} height={20}/></div>
@@ -655,74 +664,52 @@ const Home = () => {
               </div>
             </div>
             <div className={styles['card-section']}>
-              <svg className={styles['section-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="75" viewBox="0 0 2 75" fill="none">
-<path d="M1 0L1 75" stroke="url(#paint0_linear_1_1541)" stroke-width="2" stroke-dasharray="2 2"/>
-<defs>
-<linearGradient id="paint0_linear_1_1541" x1="0.999995" y1="31.1747" x2="1.00002" y2="520.03" gradientUnits="userSpaceOnUse">
-<stop stop-color="#23FFBE"/>
-<stop offset="1" stop-color="#23FFBE"/>
-</linearGradient>
-</defs>
-</svg>
-              <h3 className={styles['third-title']}>Business Model</h3>
+                <svg className={styles['section-line']} xmlns="http://www.w3.org/2000/svg" width="2" height="75" viewBox="0 0 2 75" fill="none">
+                <path d="M1 0L1 75" stroke="url(#paint0_linear_1_1541)" stroke-width="2" stroke-dasharray="2 2"/>
+                <defs>
+                <linearGradient id="paint0_linear_1_1541" x1="0.999995" y1="31.1747" x2="1.00002" y2="520.03" gradientUnits="userSpaceOnUse">
+                <stop stop-color="#23FFBE"/>
+                <stop offset="1" stop-color="#23FFBE"/>
+                </linearGradient>
+                </defs>
+              </svg>
+              
               <div className={styles['buisness-model-wrapper']}>
-               
-                  <svg className={`${styles['buisness-model-lines']}`} xmlns="http://www.w3.org/2000/svg" width="574" height="181" viewBox="0 0 574 181" fill="none">
-                    <path d="M567 46L5 46" stroke="#08F8FF" stroke-width="2"/>
-                    <path d="M568 90.7735L573.774 85L568 79.2265L562.226 85L568 90.7735ZM569 85L569 45L567 45L567 85L569 85Z" fill="#08F8FF"/>
-                    <path d="M455 180.774L460.774 175L455 169.226L449.226 175L455 180.774ZM456 175L456 45L454 45L454 175L456 175Z" fill="#08F8FF"/>
-                    <path d="M343 90.7735L348.774 85L343 79.2265L337.226 85L343 90.7735ZM344 85L344 45L342 45L342 85L344 85Z" fill="#08F8FF"/>
-                    <path d="M289.333 6.08887C289.333 3.14335 286.946 0.755535 284 0.755535C281.054 0.755535 278.667 3.14335 278.667 6.08887C278.667 9.03439 281.054 11.4222 284 11.4222C286.946 11.4222 289.333 9.03439 289.333 6.08887ZM285 46.0889L285 6.08887L283 6.08887L283 46.0889L285 46.0889Z" fill="#08F8FF"/>
-                    <path d="M230 180.774L235.774 175L230 169.226L224.226 175L230 180.774ZM231 175L231 45L229 45L229 175L231 175Z" fill="#08F8FF"/>
-                    <path d="M118 90.7735L123.774 85L118 79.2265L112.226 85L118 90.7735ZM119 85L119 45L117 45L117 85L119 85Z" fill="#08F8FF"/>
-                    <path d="M6 180.774L11.7735 175L6 169.226L0.226497 175L6 180.774ZM7 175L6.99999 45L4.99999 45L5 175L7 175Z" fill="#08F8FF"/>
+                <h3 className={styles['third-title']}>Business Model</h3>
+                <div className={styles['buisness-model-chart-container']}>
+                  <svg className={styles['chart-image']} xmlns="http://www.w3.org/2000/svg" width="449" height="449" viewBox="0 0 449 449" fill="none">
+                    <path d="M295.091 370.71C322.671 356.504 345.575 334.656 361.065 307.776C376.555 280.897 383.976 250.125 382.44 219.14L221.138 227.138L295.091 370.71Z" fill="#FFF04B"/>
+                    <path d="M210.182 385.024C232.994 387.001 255.966 384.105 277.573 376.528L224.128 224.127L210.182 385.024Z" fill="#6C65F8"/>
+                    <path d="M378.601 210.939C376.412 180.317 365.539 150.953 347.258 126.289C328.978 101.625 304.045 82.6825 275.384 71.6815C246.722 60.6804 215.519 58.0766 185.431 64.1751C155.342 70.2736 127.616 84.8219 105.5 106.115C83.3838 127.408 67.7951 154.563 60.5606 184.399C53.326 214.235 54.7454 245.514 64.6522 274.572C74.5591 303.63 92.543 329.262 116.496 348.465C140.45 367.667 169.38 379.644 199.897 382.993L217.512 222.457L378.601 210.939Z" fill="#05E9F0"/>
+                    <circle  cx="216.49" cy="222.49" r="79.4899" fill="#110F79"/>
+                    <path d="M298.371 158H293.635L302.083 149.264H292.979V146.816H305.955V150.16L298.371 158ZM312.949 158H308.213L316.661 149.264H307.557V146.816H320.533V150.16L312.949 158ZM324.551 146.416C325.447 146.416 326.125 146.731 326.583 147.36C327.053 147.979 327.287 148.853 327.287 149.984C327.287 151.115 327.069 152 326.631 152.64C326.194 153.269 325.501 153.584 324.551 153.584C323.965 153.584 323.469 153.44 323.063 153.152C322.669 152.864 322.37 152.453 322.167 151.92C321.965 151.376 321.863 150.731 321.863 149.984C321.863 148.853 322.077 147.979 322.503 147.36C322.93 146.731 323.613 146.416 324.551 146.416ZM324.567 148.048C324.311 148.048 324.125 148.208 324.007 148.528C323.89 148.848 323.831 149.339 323.831 150C323.831 150.651 323.89 151.141 324.007 151.472C324.125 151.803 324.311 151.968 324.567 151.968C324.823 151.968 325.01 151.803 325.127 151.472C325.255 151.141 325.319 150.651 325.319 150C325.319 149.339 325.255 148.848 325.127 148.528C325.01 148.208 324.823 148.048 324.567 148.048ZM332.663 146.576L326.327 158H324.455L330.791 146.576H332.663ZM332.551 150.976C333.149 150.976 333.65 151.12 334.055 151.408C334.461 151.685 334.765 152.091 334.967 152.624C335.181 153.147 335.287 153.787 335.287 154.544C335.287 155.675 335.069 156.56 334.631 157.2C334.194 157.829 333.501 158.144 332.551 158.144C331.965 158.144 331.469 158 331.063 157.712C330.669 157.424 330.37 157.013 330.167 156.48C329.965 155.936 329.863 155.291 329.863 154.544C329.863 153.413 330.077 152.539 330.503 151.92C330.93 151.291 331.613 150.976 332.551 150.976ZM332.567 152.608C332.311 152.608 332.125 152.768 332.007 153.088C331.89 153.408 331.831 153.899 331.831 154.56C331.831 155.211 331.89 155.701 332.007 156.032C332.125 156.363 332.311 156.528 332.567 156.528C332.823 156.528 333.01 156.368 333.127 156.048C333.255 155.717 333.319 155.221 333.319 154.56C333.319 153.899 333.255 153.408 333.127 153.088C333.01 152.768 332.823 152.608 332.567 152.608Z" fill="#1A194C"/>
+                    <path d="M318.049 258.016L323.713 256.816V268H320.721V259.888L318.049 260.464V258.016ZM339.208 261.04L339.224 263.984C339.224 265.28 339.064 265.76 338.984 266.032C338.744 266.832 338.248 267.424 337.4 267.728C337 267.872 336.312 268.016 335.416 268.016H326.248V268V260.848C326.248 259.536 326.408 259.056 326.488 258.784C326.728 257.984 327.224 257.392 328.072 257.088C328.472 256.944 329.16 256.8 330.056 256.8H337.768V259.248H330.6C329.448 259.248 329.224 259.936 329.224 260.832V261.04H339.208ZM329.224 263.488V265.568H334.872C336.008 265.568 336.248 264.88 336.248 263.984V263.488H329.224ZM343.481 256.416C344.377 256.416 345.054 256.731 345.513 257.36C345.982 257.979 346.217 258.853 346.217 259.984C346.217 261.115 345.998 262 345.561 262.64C345.124 263.269 344.43 263.584 343.481 263.584C342.894 263.584 342.398 263.44 341.993 263.152C341.598 262.864 341.3 262.453 341.097 261.92C340.894 261.376 340.793 260.731 340.793 259.984C340.793 258.853 341.006 257.979 341.433 257.36C341.86 256.731 342.542 256.416 343.481 256.416ZM343.497 258.048C343.241 258.048 343.054 258.208 342.937 258.528C342.82 258.848 342.761 259.339 342.761 260C342.761 260.651 342.82 261.141 342.937 261.472C343.054 261.803 343.241 261.968 343.497 261.968C343.753 261.968 343.94 261.803 344.057 261.472C344.185 261.141 344.249 260.651 344.249 260C344.249 259.339 344.185 258.848 344.057 258.528C343.94 258.208 343.753 258.048 343.497 258.048ZM351.593 256.576L345.257 268H343.385L349.721 256.576H351.593ZM351.481 260.976C352.078 260.976 352.58 261.12 352.985 261.408C353.39 261.685 353.694 262.091 353.897 262.624C354.11 263.147 354.217 263.787 354.217 264.544C354.217 265.675 353.998 266.56 353.561 267.2C353.124 267.829 352.43 268.144 351.481 268.144C350.894 268.144 350.398 268 349.993 267.712C349.598 267.424 349.3 267.013 349.097 266.48C348.894 265.936 348.793 265.291 348.793 264.544C348.793 263.413 349.006 262.539 349.433 261.92C349.86 261.291 350.542 260.976 351.481 260.976ZM351.497 262.608C351.241 262.608 351.054 262.768 350.937 263.088C350.82 263.408 350.761 263.899 350.761 264.56C350.761 265.211 350.82 265.701 350.937 266.032C351.054 266.363 351.241 266.528 351.497 266.528C351.753 266.528 351.94 266.368 352.057 266.048C352.185 265.717 352.249 265.221 352.249 264.56C352.249 263.899 352.185 263.408 352.057 263.088C351.94 262.768 351.753 262.608 351.497 262.608Z" fill="#1A194C"/>
+                    <path d="M230.16 346H225.424L233.872 337.264H224.768V334.816H237.744V338.16L230.16 346ZM241.762 334.416C242.658 334.416 243.335 334.731 243.794 335.36C244.263 335.979 244.498 336.853 244.498 337.984C244.498 339.115 244.279 340 243.842 340.64C243.405 341.269 242.711 341.584 241.762 341.584C241.175 341.584 240.679 341.44 240.274 341.152C239.879 340.864 239.581 340.453 239.378 339.92C239.175 339.376 239.074 338.731 239.074 337.984C239.074 336.853 239.287 335.979 239.714 335.36C240.141 334.731 240.823 334.416 241.762 334.416ZM241.778 336.048C241.522 336.048 241.335 336.208 241.218 336.528C241.101 336.848 241.042 337.339 241.042 338C241.042 338.651 241.101 339.141 241.218 339.472C241.335 339.803 241.522 339.968 241.778 339.968C242.034 339.968 242.221 339.803 242.338 339.472C242.466 339.141 242.53 338.651 242.53 338C242.53 337.339 242.466 336.848 242.338 336.528C242.221 336.208 242.034 336.048 241.778 336.048ZM249.874 334.576L243.538 346H241.666L248.002 334.576H249.874ZM249.762 338.976C250.359 338.976 250.861 339.12 251.266 339.408C251.671 339.685 251.975 340.091 252.178 340.624C252.391 341.147 252.498 341.787 252.498 342.544C252.498 343.675 252.279 344.56 251.842 345.2C251.405 345.829 250.711 346.144 249.762 346.144C249.175 346.144 248.679 346 248.274 345.712C247.879 345.424 247.581 345.013 247.378 344.48C247.175 343.936 247.074 343.291 247.074 342.544C247.074 341.413 247.287 340.539 247.714 339.92C248.141 339.291 248.823 338.976 249.762 338.976ZM249.778 340.608C249.522 340.608 249.335 340.768 249.218 341.088C249.101 341.408 249.042 341.899 249.042 342.56C249.042 343.211 249.101 343.701 249.218 344.032C249.335 344.363 249.522 344.528 249.778 344.528C250.034 344.528 250.221 344.368 250.338 344.048C250.466 343.717 250.53 343.221 250.53 342.56C250.53 341.899 250.466 341.408 250.338 341.088C250.221 340.768 250.034 340.608 249.778 340.608Z" fill="white"/>
                   </svg>
-                  <svg className={`${styles['buisness-model-lines']} ${styles.mobile}`} xmlns="http://www.w3.org/2000/svg" width="225" height="221" viewBox="0 0 225 221" fill="none">
-                  <path d="M220 46L6 46" stroke="#08F8FF" stroke-width="2"/>
-                  <path d="M219 80.7735L224.774 75L219 69.2265L213.226 75L219 80.7735ZM220 75L220 45L218 45L218 75L220 75Z" fill="#08F8FF"/>
-                  <path d="M176 180.774L181.774 175L176 169.226L170.226 175L176 180.774ZM177 175L177 46L175 46L175 175L177 175Z" fill="#08F8FF"/>
-                  <path d="M134 110.774L139.774 105L134 99.2265L128.226 105L134 110.774ZM135 105L135 45L133 45L133 105L135 105Z" fill="#08F8FF"/>
-                  <path d="M119.333 6C119.333 3.05449 116.946 0.666668 114 0.666668C111.054 0.666668 108.667 3.05449 108.667 6C108.667 8.94552 111.054 11.3333 114 11.3333C116.946 11.3333 119.333 8.94552 119.333 6ZM115 46L115 6L113 6L113 46L115 46Z" fill="#08F8FF"/>
-                  <path d="M91 220.774L96.7735 215L91 209.226L85.2265 215L91 220.774ZM92 215L92 46L90 46L90 215L92 215Z" fill="#08F8FF"/>
-                  <path d="M49 80.7735L54.7735 75L49 69.2265L43.2265 75L49 80.7735ZM50 75L50 45L48 45L48 75L50 75Z" fill="#08F8FF"/>
-                  <path d="M6.5 180.685L12.2735 174.911L6.5 169.138L0.726497 174.911L6.5 180.685ZM7.5 174.911L7.49999 44.9111L5.49999 44.9111L5.5 174.911L7.5 174.911Z" fill="#08F8FF"/>
-                  </svg>
-                  <div className={styles['buisness-model-item']}>
-                    <div className={styles['buisness-model-list-icon']}>
-                      <Image  src='/assets/img/Platform.png' width={25} height={25}/>
-                    </div>
-                    <h3 className={styles['model-title']}>Platform Subscriptions</h3>
+                  <Image className={`${styles['logo']}`} src='/assets/img/footer-logo.png' width={74} height={22}/>
+                  <div className={`${styles['chart-desc']}`}>
+                    <p>Platform Subscriptions</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="198" height="40" viewBox="0 0  198 40" fill="none">
+                      <path d="M1.00003 39L22.8606 1H198" stroke="white"/>
+                    </svg>
                   </div>
-                  <div className={styles['buisness-model-item']}>
-                    <div className={styles['buisness-model-list-icon']}>
-                      <Image  src='/assets/img/Project.png' width={25} height={25}/>
-                    </div>
-                    <h3 className={styles['model-title']}>Project Commission</h3>
+                  <div className={`${styles['chart-desc']}`}>
+                    <p>Project Commission</p>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="184" height="40" viewBox="0 0 184 40" fill="none">
+                      <path d="M1.00003 1L22.8606 39H183.5" stroke="white"/>
+                    </svg>
                   </div>
-                  <div className={styles['buisness-model-item']}>
-                    <div className={styles['buisness-model-list-icon']}>
-                      <Image  src='/assets/img/Marketplace .png' width={25} height={25}/>
-                    </div>
-                    <h3 className={styles['model-title']}>Marketplace Revenue</h3>
+                  <div className={`${styles['chart-desc']}`}>
+                      <p> Marketplace Revenue
+                          Staking Fees
+                          Advertising Revenue
+                          Service Packages
+                      </p>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="263" height="125" viewBox="0 0 263 125" fill="none">
+                      <path d="M0.5 1H28.5L75.5 124H262.5" stroke="white"/>
+                      </svg>
                   </div>
-                  <div className={styles['buisness-model-item']}>
-                    <div className={styles['buisness-model-list-icon']}>
-                      <Image  src='/assets/img/Staking.png' width={25} height={25}/>
-                    </div>
-                    <h3 className={styles['model-title']}>Staking Fees</h3>
-                  </div>
-                  <div className={styles['buisness-model-item']}>
-                    <div className={styles['buisness-model-list-icon']}>
-                      <Image  src='/assets/img/Advertising.png' width={25} height={25}/>
-                    </div>
-                    <h3 className={styles['model-title']}>Advertising Revenue</h3>
-                  </div>
-                  <div className={styles['buisness-model-item']}>
-                    <div className={styles['buisness-model-list-icon']}>
-                      <Image  src='/assets/img/Service.png' width={25} height={25}/>
-                    </div>
-                    <h3 className={styles['model-title']}>Service Packages</h3>
-                  </div>
+                </div>
               </div>
             </div>
             <div className={styles['card-section']}>
@@ -793,212 +780,280 @@ const Home = () => {
                 </linearGradient>
                 </defs>
         </svg>
-        <h1 className={styles['main-title']}>ENGAGED CONSUMERS</h1>
+        <h1 className={styles['main-title']}>Go-To-Market Strategy</h1>
         <div  className={styles['consumers-wrapper']}>
         <svg
-  className={styles['section-line']}
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 976 4712"
-  preserveAspectRatio="none"
-  fill="none"
->
-  <g clipPath="url(#clip0_1741_2330)">
-    <g opacity="0.45" filter="url(#filter0_f_1741_2330)">
-      <path
-        d="M249 1892.01C249 2005.78 74.7707 1984.51 -39 1984.51C-152.771 1984.51 -245 1892.28 -245 1778.51C-245 1664.74 -101 1331.51 -39 1572.51C-39 1700.51 249 1778.24 249 1892.01Z"
-        fill="#FFDF2C"
-      />
-    </g>
-    <g opacity="0.45" filter="url(#filter1_f_1741_2330)">
-      <circle cx="1037" cy="1607" r="206" fill="#FFDF2C" />
-    </g>
-    <g opacity="0.45" filter="url(#filter2_f_1741_2330)">
-      <path
-        d="M249 4656.01C249 4769.78 74.7707 4748.51 -39 4748.51C-152.771 4748.51 -245 4656.28 -245 4542.51C-245 4428.74 -101 4095.51 -39 4336.51C-39 4464.51 249 4542.24 249 4656.01Z"
-        fill="#FFDF2C"
-      />
-    </g>
-    <g opacity="0.45" filter="url(#filter3_f_1741_2330)">
-      <circle cx="1037" cy="4371" r="206" fill="#FFDF2C" />
-    </g>
-    <g opacity="0.45" filter="url(#filter4_f_1741_2330)">
-      <circle cx="14" cy="-17" r="106" fill="#FFDF2C" />
-    </g>
-  </g>
-  <rect
-    x="1"
-    y="1"
-    width="974"
-    height="4710"
-    rx="14"
-    stroke="url(#paint0_linear_1741_2330)"
-    strokeWidth="2"
-    strokeDasharray="2 2"
-    fill="none" 
-  />
-  <defs>
-    <filter
-      id="filter0_f_1741_2330"
-      x="-445"
-      y="1287"
-      width="894"
-      height="899.083"
-      filterUnits="userSpaceOnUse"
-      colorInterpolationFilters="sRGB"
-    >
-      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-      <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1741_2330" />
-    </filter>
-    <filter
-      id="filter1_f_1741_2330"
-      x="631"
-      y="1201"
-      width="812"
-      height="812"
-      filterUnits="userSpaceOnUse"
-      colorInterpolationFilters="sRGB"
-    >
-      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-      <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1741_2330" />
-    </filter>
-    <filter
-      id="filter2_f_1741_2330"
-      x="-445"
-      y="4051"
-      width="894"
-      height="899.083"
-      filterUnits="userSpaceOnUse"
-      colorInterpolationFilters="sRGB"
-    >
-      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-      <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1741_2330" />
-    </filter>
-    <filter
-      id="filter3_f_1741_2330"
-      x="631"
-      y="3965"
-      width="812"
-      height="812"
-      filterUnits="userSpaceOnUse"
-      colorInterpolationFilters="sRGB"
-    >
-      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-      <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1741_2330" />
-    </filter>
-    <filter
-      id="filter4_f_1741_2330"
-      x="-442"
-      y="-473"
-      width="912"
-      height="912"
-      filterUnits="userSpaceOnUse"
-      colorInterpolationFilters="sRGB"
-    >
-      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-      <feGaussianBlur stdDeviation="175" result="effect1_foregroundBlur_1741_2330" />
-    </filter>
-    <linearGradient
-      id="paint0_linear_1741_2330"
-      x1="488"
-      y1="0"
-      x2="488"
-      y2="3017.7"
-      gradientUnits="userSpaceOnUse"
-    >
-      <stop stopColor="#FFDF2C" />
-      <stop offset="1" stopColor="#FFDF2C" stopOpacity="0.39" />
-    </linearGradient>
-    <clipPath id="clip0_1741_2330">
-      <rect width="976" height="4712" rx="15" fill="white" />
-    </clipPath>
-  </defs>
-</svg>
-<svg
- className={`${styles["section-line"]} ${styles.mobile}`}
-  xmlns="http://www.w3.org/2000/svg"
-  viewBox="0 0 358 7688"
-  preserveAspectRatio="none"
-  fill="none"
->
-  <g clipPath="url(#clip0_1905_1875)">
-    <g opacity="0.45" filter="url(#filter0_f_1905_1875)">
-      <circle cx="351" cy="7578" r="206" fill="#FFDF2C" />
-    </g>
-    <g opacity="0.45" filter="url(#filter1_f_1905_1875)">
-      <path
-        d="M363 8016.01C363 8129.78 188.771 8108.51 75 8108.51C-38.7707 8108.51 -131 8016.28 -131 7902.51C-131 7788.74 13 7455.51 75 7696.51C75 7824.51 363 7902.24 363 8016.01Z"
-        fill="#FFDF2C"
-      />
-    </g>
-  </g>
-  <rect
-    x="1"
-    y="1"
-    width="356"
-    height="7686"
-    rx="14"
-    stroke="url(#paint0_linear_1905_1875)"
-    strokeWidth="2"
-    strokeDasharray="2 2"
-    fill="none"
-  />
-  <defs>
-    <filter
-      id="filter0_f_1905_1875"
-      x="25"
-      y="7252"
-      width="652"
-      height="652"
-      filterUnits="userSpaceOnUse"
-      colorInterpolationFilters="sRGB"
-    >
-      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-      <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1905_1875" />
-    </filter>
-    <filter
-      id="filter1_f_1905_1875"
-      x="-251"
-      y="7491"
-      width="734"
-      height="739.083"
-      filterUnits="userSpaceOnUse"
-      colorInterpolationFilters="sRGB"
-    >
-      <feFlood floodOpacity="0" result="BackgroundImageFix" />
-      <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-      <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1905_1875" />
-    </filter>
-    <linearGradient
-      id="paint0_linear_1905_1875"
-      x1="179"
-      y1="3.89942e-06"
-      x2="1538.62"
-      y2="7440.14"
-      gradientUnits="userSpaceOnUse"
-    >
-      <stop stopColor="#FFDF2C" />
-      <stop offset="1" stopColor="#FFDF2C" />
-    </linearGradient>
-    <clipPath id="clip0_1905_1875">
-      <rect width="358" height="7688" rx="15" fill="white" />
-    </clipPath>
-  </defs>
-</svg>
-
-
+            className={styles['section-line']}
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 976 4712"
+            preserveAspectRatio="none"
+            fill="none"
+          >
+          <g clipPath="url(#clip0_1741_2330)">
+            <g opacity="0.45" filter="url(#filter0_f_1741_2330)">
+              <path
+                d="M249 1892.01C249 2005.78 74.7707 1984.51 -39 1984.51C-152.771 1984.51 -245 1892.28 -245 1778.51C-245 1664.74 -101 1331.51 -39 1572.51C-39 1700.51 249 1778.24 249 1892.01Z"
+                fill="#FFDF2C"
+              />
+            </g>
+            <g opacity="0.45" filter="url(#filter1_f_1741_2330)">
+              <circle cx="1037" cy="1607" r="206" fill="#FFDF2C" />
+            </g>
+            <g opacity="0.45" filter="url(#filter2_f_1741_2330)">
+              <path
+                d="M249 4656.01C249 4769.78 74.7707 4748.51 -39 4748.51C-152.771 4748.51 -245 4656.28 -245 4542.51C-245 4428.74 -101 4095.51 -39 4336.51C-39 4464.51 249 4542.24 249 4656.01Z"
+                fill="#FFDF2C"
+              />
+            </g>
+            <g opacity="0.45" filter="url(#filter3_f_1741_2330)">
+              <circle cx="1037" cy="4371" r="206" fill="#FFDF2C" />
+            </g>
+            <g opacity="0.45" filter="url(#filter4_f_1741_2330)">
+              <circle cx="14" cy="-17" r="106" fill="#FFDF2C" />
+            </g>
+          </g>
+          <rect
+            x="1"
+            y="1"
+            width="974"
+            height="4710"
+            rx="14"
+            stroke="url(#paint0_linear_1741_2330)"
+            strokeWidth="2"
+            strokeDasharray="2 2"
+            fill="none" 
+          />
+          <defs>
+            <filter
+              id="filter0_f_1741_2330"
+              x="-445"
+              y="1287"
+              width="894"
+              height="899.083"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1741_2330" />
+            </filter>
+            <filter
+              id="filter1_f_1741_2330"
+              x="631"
+              y="1201"
+              width="812"
+              height="812"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1741_2330" />
+            </filter>
+            <filter
+              id="filter2_f_1741_2330"
+              x="-445"
+              y="4051"
+              width="894"
+              height="899.083"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1741_2330" />
+            </filter>
+            <filter
+              id="filter3_f_1741_2330"
+              x="631"
+              y="3965"
+              width="812"
+              height="812"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feGaussianBlur stdDeviation="100" result="effect1_foregroundBlur_1741_2330" />
+            </filter>
+            <filter
+              id="filter4_f_1741_2330"
+              x="-442"
+              y="-473"
+              width="912"
+              height="912"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feGaussianBlur stdDeviation="175" result="effect1_foregroundBlur_1741_2330" />
+            </filter>
+            <linearGradient
+              id="paint0_linear_1741_2330"
+              x1="488"
+              y1="0"
+              x2="488"
+              y2="3017.7"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#FFDF2C" />
+              <stop offset="1" stopColor="#FFDF2C" stopOpacity="0.39" />
+            </linearGradient>
+            <clipPath id="clip0_1741_2330">
+              <rect width="976" height="4712" rx="15" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+        <svg
+        className={`${styles["section-line"]} ${styles.mobile}`}
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 358 7688"
+          preserveAspectRatio="none"
+          fill="none"
+        >
+          <g clipPath="url(#clip0_1905_1875)">
+            <g opacity="0.45" filter="url(#filter0_f_1905_1875)">
+              <circle cx="351" cy="7578" r="206" fill="#FFDF2C" />
+            </g>
+            <g opacity="0.45" filter="url(#filter1_f_1905_1875)">
+              <path
+                d="M363 8016.01C363 8129.78 188.771 8108.51 75 8108.51C-38.7707 8108.51 -131 8016.28 -131 7902.51C-131 7788.74 13 7455.51 75 7696.51C75 7824.51 363 7902.24 363 8016.01Z"
+                fill="#FFDF2C"
+              />
+            </g>
+          </g>
+          <rect
+            x="1"
+            y="1"
+            width="356"
+            height="7686"
+            rx="14"
+            stroke="url(#paint0_linear_1905_1875)"
+            strokeWidth="2"
+            strokeDasharray="2 2"
+            fill="none"
+          />
+          <defs>
+            <filter
+              id="filter0_f_1905_1875"
+              x="25"
+              y="7252"
+              width="652"
+              height="652"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1905_1875" />
+            </filter>
+            <filter
+              id="filter1_f_1905_1875"
+              x="-251"
+              y="7491"
+              width="734"
+              height="739.083"
+              filterUnits="userSpaceOnUse"
+              colorInterpolationFilters="sRGB"
+            >
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+              <feGaussianBlur stdDeviation="60" result="effect1_foregroundBlur_1905_1875" />
+            </filter>
+            <linearGradient
+              id="paint0_linear_1905_1875"
+              x1="179"
+              y1="3.89942e-06"
+              x2="1538.62"
+              y2="7440.14"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#FFDF2C" />
+              <stop offset="1" stopColor="#FFDF2C" />
+            </linearGradient>
+            <clipPath id="clip0_1905_1875">
+              <rect width="358" height="7688" rx="15" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
 
           <Element name="invest" className={styles.content}>
-            <h2 className={styles['secondary-title']}>WHO WILL BUY THIS?</h2>
-            <p className={styles.subtitle}>We already have access to our target audience</p>
+           
             <div className={styles['card-section']}>
-              <h3 className={styles['third-title']}>OUR WARM AUDIENCE BASE</h3>
-             
+            <span className={styles['section-count']}>1</span>
+              <h2 className={styles['secondary-title']}>Cold Audience Lead Generation System</h2>
+              <h4 className={styles['four-title']}>Traffic Generation System – Developed and Validated on $30,000 Budget</h4>
+            
+              <div className={`${styles['paid-content']} ${styles.mobile}`}>
+                <h5 className={styles['paid-title']}>Paid Advertising</h5>
+                <div className={styles['paid-logos']}>
+                  <Image src="/assets/img/Google.png" alt="Google" width={117} height={39}/>
+                  <Image src="/assets/img/Facebook.png" alt="Facebook" width={153} height={27}/>
+                  <Image src="/assets/img/Instagram.png" alt="Instagram" width={128} height={43}/>
+                </div>
+              </div>
+              <h3 className={styles['third-title']}>Sales System</h3>
+              <div className={styles['sales-system']}>
+                <div className={styles['sales-system-item']}>
+                  <h5 className={styles['sales-system-title']}>Auto webinar funnel</h5>
+                  <Image src='/assets/img/AutowebMiro.png' width={229} height={400}   sizes="(max-width: 768px) 100vw, 229px" />
+                  <Image src='/assets/img/Bandle.png' width={229} height={167}   sizes="(max-width: 768px) 100vw, 229px" />
+                </div>
+                <div className={styles['sales-system-item']}>
+                  <h5 className={styles['sales-system-title']}>Curator-based funnel</h5>
+                  <Image src='/assets/img/AutowebMiro1.png' width={229} height={285}   sizes="(max-width: 768px) 100vw, 229px" />
+                  <Image src='/assets/img/Bandle2.png' width={229} height={124}   sizes="(max-width: 768px) 100vw, 229px" />
+                </div>
+                <div className={styles['sales-system-item']}>
+                  <h5 className={styles['sales-system-title']}>Video sales funnel</h5>
+                  <Image 
+                    src='/assets/img/AutowebMiro2.png' 
+                    width={229} 
+                    height={285} 
+                    sizes="(max-width: 768px) 100vw, 229px" 
+                  />
+                  <Image 
+                    src='/assets/img/Bandle3.png' 
+                    width={229} 
+                    height={124} 
+                    sizes="(max-width: 768px) 100vw, 229px" 
+                  />
+                </div>
+              </div>
+              <div className={`${styles['paid-content']} `}>
+                <h5 className={styles['paid-title']}>Paid Advertising</h5>
+                <div className={styles['paid-logos']}>
+                  <Image src="/assets/img/Google.png" alt="Google" width={117} height={39}/>
+                  <Image src="/assets/img/Facebook.png" alt="Facebook" width={153} height={27}/>
+                  <Image src="/assets/img/Instagram.png" alt="Instagram" width={128} height={43}/>
+                </div>
+              </div>
+              <div className={styles['record-content']}>
+                <div>
+                  <p className={styles.title}>
+                    Current Track Record:
+                  </p>
+                  <p>
+                    CAC
+                    <span>
+                      $430
+                    </span>
+                  </p>
+                  <p>
+                    LTV
+                    <span>
+                      $1450
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            
+            <div className={styles['card-section']}> 
+              <span className={styles['section-count']}>2</span>
+            <h2 className={styles['secondary-title']}>WARM AUDIENCE BASE</h2>
+            <p className={styles.subtitle}>We already have access to our target audience</p>
               <div className={styles.cards}>
                 <div className={styles.card}>
                   <span className={styles['card-note']}>USERS</span>
@@ -1032,37 +1087,14 @@ const Home = () => {
               </div>
             </div>
             <div className={styles['card-section']}>
-              <h3 className={styles['third-title']}>CONSERVATIVE PATH TO UNICORN</h3>
+            <span className={styles['section-count']}>3</span>
+              <h3 className={styles['third-title']}>Growth Channels</h3>
               <svg  className={styles["section-line"]} xmlns="http://www.w3.org/2000/svg" width="3" height="72" viewBox="0 0 3 72" fill="none">
               <path d="M2 1L1 71" stroke="#FFDF2C" stroke-width="2" stroke-dasharray="2 2"/>
               </svg>
-             
-              <p className={styles['numbers-title']}>0.005%</p>
-              <p className={styles.subtitle}>That&#39;s all we need from our existing audience base</p>
-              <div className={styles['single-card']}>
-                <div className={styles['calculates']}>
-                  <p className={styles['numbers-title']}>50’000 <span>Users</span></p>
-                  <p className={styles['numbers-title']}>х</p>
-                  <p className={styles['numbers-title']}>$220<span>Monthly</span></p>
-                  <p className={styles['numbers-title']}>=</p>
-                  <p className={styles['numbers-title']}>$1B+ <span>Valuation</span></p>
-                </div>
-                <p className={styles.subtitle}>Just 0.005% conversion from our existing audience base</p>
-              </div>
-            </div>
-            <div className={styles['card-section']}>
-              <h3 className={styles['third-title']}>AND THAT’S JUST THE BEGINNING</h3>
-              <svg  className={styles["section-line"]} xmlns="http://www.w3.org/2000/svg" width="3" height="72" viewBox="0 0 3 72" fill="none">
-              <path d="M2 1L1 71" stroke="#FFDF2C" stroke-width="2" stroke-dasharray="2 2"/>
-              </svg>
-                <p className={styles.subtitle}>Multiplying our growth through additional channels together with warm audience base engagement</p>
                 <div className={styles['cards-unicorn']}>
                 <div className={styles.card}>
-                  <h3 className={styles['card-title']}>GROWTH CHANNELS</h3>
                   <ul className={styles['card-list']}>
-                    <li className={styles['card-list-item']}>
-                      Paid Advertising
-                    </li>
                     <li className={styles['card-list-item']}>
                       Conferences
                     </li>
@@ -1111,6 +1143,7 @@ const Home = () => {
               <div>
                 <div className={styles['team-group']}>
                   <h3 className={styles['team-title']}>Founders</h3>
+                  <p className={styles.subtitle}>Over 5 years of a strong, results-driven partnership in crypto and digital marketing, founded on shared values and mutual trust</p>
                   <div>
                     <div className={styles['team-group-item']}>
                       <Image className={styles['member-img']} src='/assets/img/kir.png' width={150} height={136}/>
@@ -1146,43 +1179,44 @@ const Home = () => {
                 </div>
                 <div className={styles['team-group']}>
                   <h4 className={styles['team-title']}>C-level team</h4>
-                  <div>
-                    <div className={styles['team-group-item']}>
-                      <Image className={styles['member-img']} src='/assets/img/alex.png' width={150} height={136}/>
-                      <p className={styles['member-title']}>Alex Pomelnikov, Phd, CFO</p>
-                      <a className={styles['member-link']} href='https://www.linkedin.com/in/apomelnikov/' target='_blank'>
-                        <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
-                        @apomelnikov
-                      </a>
-                      <div className={styles['member-desc']}>
-                        <p>
-                        PhD in Economics, 17+ years expertise in Finance & Economics, Former founder of 2 international businesses, Investor-analyst, having evaluated hundreds of projects valued between $1 million and $500 million, resulting in over $60 million in successful investments</p>
-                      </div>
-                    </div>
-                    <div className={styles['team-group-item']}>
-                      <Image className={styles['member-img']} src='/assets/img/vadim.png' width={150} height={136}/>
-                      <p className={styles['member-title']}>Vadim Golubtsov, COO</p>
-                      <div className={styles['member-desc']}>
-                        <p>16+ years of expertise in IT, with experience architecting and leading high-performance teams to build IT solutions for enterprises and SMBs across MarTech, EdTech, FinTech, HR, and Web3 in the USA and internationally. Formerly with Hewlett-Packard, certified HP Instructor, IT Service Manager, ITIL Expert</p>
-                      </div>
-                    </div>
-                  </div>
-                 
+                  <p className={styles.subtitle}>5+ years of seamless on-project collaboration, working as a cohesive and results-driven team</p>
                   <div className={styles['team-group-item']}>
-                    <Image className={styles['member-img']} src='/assets/img/igor.png' width={150} height={136}/>
                     <div>
-                      <p className={styles['member-title']}>Igor Jalenco, <br/>
-                      CBDO</p>
-                      <div className={styles['member-desc']}>
-                        <p>13+ years expertise in EdTech, Marketing & StartUps, managed corporate education programs for IT companies with 300+ employees valued at $500M+. Led growth of international EdTech business to 5 countries (UAE, KSA, Kazakhstan, Ukraine, Azerbaijan), reaching 14K+ students. As Project Lead, successfully launched and scaled digital projects MySoul.help and Smartexpert.net from scratch</p>
+                      <Image className={styles['member-img']} src='/assets/img/alex.png' width={86} height={78}/>
+                      <div>
+                        <p className={styles['member-title']}>Alex Pomelnikov, <br></br>Phd, CFO</p>
+                        <a className={styles['member-link']} href='https://www.linkedin.com/in/apomelnikov/' target='_blank'>
+                          <Image  src='/assets/img/icons/linkedin.png' width={14} height={14}/>
+                          @apomelnikov
+                        </a>
                       </div>
                     </div>
+                    <p className={styles['member-desc']}>
+                    17+ years in Finance & Economics</p>
+                  </div>
+                  <div className={styles['team-group-item']}>
+                    <div>
+                      <Image className={styles['member-img']} src='/assets/img/igor.png' width={86} height={78}/>
+                      <div>
+                        <p className={styles['member-title']}>Igor Jalenco, <br/>CBDO</p>
+                      </div>
+                    </div>
+                    <p className={styles['member-desc']}>10+ years in EdTech BD</p>
                   
                   </div>
-                  
+                  <div className={styles['team-group-item']}>
+                    <div className={styles['member-desc']}>
+                      <Image className={styles['member-img']} src='/assets/img/vadim.png' width={86} height={78}/>
+                      <div>
+                        <p className={styles['member-title']}>Vadim Golubtsov, COO</p>
+                      </div>
+                      
+                    </div>
+                    <p className={styles['member-desc']}>16+ years in IT Management</p>
+                  </div>
                 </div>
               </div>
-              <div className={styles['team-group']}>
+              <div className={`${styles['team-group']} ${styles['team-group-flex']}`}>
                 <h4 className={styles['team-title']}>Advisors</h4>
                 <div>
                 <div className={styles['team-group-item']}>
@@ -1234,7 +1268,7 @@ const Home = () => {
                 <Image src='/assets/img/floki.png' width={22} height={22}/>
                 <Image src='/assets/img/snape.png' width={61} height={16}/>
                 <Image src='/assets/img/Grou7.png' width={60} height={16}/>
-                <Image src='/assets/img/a858a9a.png' width={65} height={17}/>
+                <Image src='/assets/img/a858a9a.png' width={65} height={17} />
                 <Image src='/assets/img/full-vaiot2.png' width={67} height={14}/>
                 <Image src='/assets/img/channels4.png' width={60} height={19}/>
                 <Image src='/assets/img/gass1.png' width={62} height={14}/>

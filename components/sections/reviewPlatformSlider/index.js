@@ -13,14 +13,13 @@ import withReactContent from 'sweetalert2-react-content';
 const ReviewPlatformSlider = () => {
   const MySwal = withReactContent(Swal);
 
-  // Функция для открытия попапа
   const handleSlideClick = (src) => {
     MySwal.fire({
       imageUrl: src,
       imageAlt: 'Large Image',
       showCloseButton: true,
       showConfirmButton: false,
-      width: '80%', // Контролируем размер изображения в попапе
+      width: '80%',
       heightAuto: true,
     });
   };
@@ -29,11 +28,9 @@ const ReviewPlatformSlider = () => {
     <Swiper
       className={styles['exeptional-section-slider']}
       spaceBetween={6}
-      slidesPerView={4}
+      slidesPerView={5}
       grabCursor={true}
       loop={true}
-      centeredSlides={true}
-      slideToClickedSlide={true}
       effect="slide"
       breakpoints={{
         390: {
@@ -48,57 +45,81 @@ const ReviewPlatformSlider = () => {
       }}
     >
       
-      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/Rectangle41.png')}>
+      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/screen1.png')}>
         <Image
-          src='/assets/img/Rectangle41.png'
+          src='/assets/img/screen1.png'
           alt="project-item"
           width={260}
           height={195}
         />
       </SwiperSlide>
-      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/Rectangle42.png')}>
+      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/screen2.png')}>
         <Image
-          src='/assets/img/Rectangle42.png'
+          src='/assets/img/screen2.png'
           alt="project-item"
           width={260}
           height={195}
         />
       </SwiperSlide>
-      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/Rectangle43.png')}>
+      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/screen3.png')}>
         <Image
-          src='/assets/img/Rectangle43.png'
+          src='/assets/img/screen3.png'
           alt="project-item"
           width={260}
           height={195}
         />
       </SwiperSlide>
-      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/Rectangle44.png')}>
+      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/screen4.png')}>
         <Image
-          src='/assets/img/Rectangle44.png'
+          src='/assets/img/screen4.png'
           alt="project-item"
           width={260}
           height={195}
         />
       </SwiperSlide>
-      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/Rectangle45.png')}>
+      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/screen5.png')}>
         <Image
-          src='/assets/img/Rectangle45.png'
+          src='/assets/img/screen5.png'
           alt="project-item"
           width={260}
           height={195}
         />
       </SwiperSlide>
-      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/Rectangle46.png')}>
+      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/screen6.png')}>
         <Image
-          src='/assets/img/Rectangle46.png'
+          src='/assets/img/screen6.png'
           alt="project-item"
           width={260}
           height={195}
         />
       </SwiperSlide>
-      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/Rectangle47.png')}>
+      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/screen7.png')}>
         <Image
-          src='/assets/img/Rectangle47.png'
+          src='/assets/img/screen7.png'
+          alt="project-item"
+          width={260}
+          height={195}
+        />
+      </SwiperSlide>
+      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/screen8.png')}>
+        <Image
+          src='/assets/img/screen8.png'
+          alt="project-item"
+          width={260}
+          height={195}
+        />
+      </SwiperSlide>
+      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/screen9.png')}>
+        <Image
+          src='/assets/img/screen9.png'
+          alt="project-item"
+          width={260}
+          height={195}
+        />
+      </SwiperSlide>
+      <SwiperSlide className={styles['slide-wrapper']} onClick={() => handleSlideClick('/assets/img/screen10.png')}>
+        <Image
+          src='/assets/img/screen10.png'
           alt="project-item"
           width={260}
           height={195}
