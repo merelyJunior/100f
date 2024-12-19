@@ -159,10 +159,17 @@ const Home = () => {
         <h3 className={styles['add-title']}>INSIGHTS FROM VENTURE EXPERTS</h3>
         <button className={styles['show-add-btn']} onClick={()=>handleShowPopup()}>See what the industry legend says about us</button>
         <div className={styles['add-logos']}>
-          <Image src='/assets/img/Sony_logo1.png' width={48} height={8}/>
-          <Image src='/assets/img/Microsoft_logo_(2012)1.png' width={63} height={13}/>
-          <Image src='/assets/img/layer1.png' width={61} height={15}/>
-          <Image src='/assets/img/Verizon_2015_logo_-vector1.png' width={58} height={12}/>
+          <Image src='/assets/img/sony.png' alt='sony' width={48} height={8}/>
+          <Image src='/assets/img/microsoft.png'   alt='microsoft' width={63} height={13}/>
+          <Image src='/assets/img/nintendo.png'   alt='nintendo' width={61} height={15}/>
+          <Image src='/assets/img/verizon1.png'   alt='verizon' width={58} height={12}/>
+          <Image src='/assets/img/sanyo.png'  alt='sanyo'  width={58} height={12}/>
+          <Image src='/assets/img/ebay.png' alt='ebay' width={46} height={19}/>
+          <Image src='/assets/img/sega.png'  alt='sega'  width={38} height={15}/>
+          <Image src='/assets/img/mazda.png'  alt='mazda'  width={20} height={15}/>
+          <Image src='/assets/img/mitsubishi.png'  alt='mitsubishi'  width={20} height={17}/>
+          <Image src='/assets/img/symantec.png'  alt='symantec'  width={61} height={12}/>
+          <Image src='/assets/img/hitachi.png'  alt='hitachi'  width={68} height={21}/>
         </div>
        </div>
        <Image className={styles['add-preview'] } onClick={()=>handleShowPopup()} src='/assets/img/Preview.png' width={153} height={87}/>
@@ -179,7 +186,7 @@ const Home = () => {
         <div className={styles.content}>
             <div className={styles['left-side']}>
               <h1 className={styles["main-title"]}>100 Franklins&#39; Journey <br/>to <span className={styles['text-gradient']}>Unicorn Status</span>: Backed by Numbers,<br/> Not Promises</h1>
-              <h1 className={`${styles["main-title"]} ${styles.mobile}`}>100 Franklins&#39; Journey <br/> to <span className={styles['text-gradient']}>Unicorn Status</span> : Backed by Numbers, Not Promises</h1>
+              <h1 className={`${styles["main-title"]} ${styles.mobile}`}>100 Franklins&#39; Journey <br/> to <span className={styles['text-gradient']}>Unicorn Status</span>: Backed by Numbers, Not Promises</h1>
               <p className={styles.subtitle}>We are building a unified platform <br/>connecting qualified Web3 projects <br/>with a knowledgeable audience</p>
               <Link to="contacts" smooth={true} duration={700} className={styles['schedule-btn']}>Schedule Demo</Link>
             </div>
@@ -359,28 +366,31 @@ const Home = () => {
                   <div className={styles['item-projects-list']}>
                       <div className={styles['animation-container']}>
                           <div className={styles['left-animation']}>
-                              <div><Image src="/assets/img/imag17.png" alt="lbank" width={95} height={35}/></div>
-                              <div><Image src="/assets/img/Group48095535.png" alt="bitmart" width={95} height={35}/></div>
+                             
                               <div><Image src="/assets/img/Group48095537.png" alt="certik" width={95} height={35}/></div>
                               <div ><Image src="/assets/img/image11.png" alt="vaiot" width={95} height={35}/></div>
                               <div><Image src="/assets/img/Group48095525.png" alt="mexc" width={80} height={20}/></div>
                               <div><Image src="/assets/img/zv15.png" alt="gate" width={78} height={20}/></div>
                               <div><Image src="/assets/img/biget1.png" alt="biget" width={78} height={20}/></div>
+                              <div><Image src="/assets/img/imag17.png" alt="lbank" width={95} height={35}/></div>
+                              <div><Image src="/assets/img/Group48095535.png" alt="bitmart" width={95} height={35}/></div>
+                              <div><Image src="/assets/img/DAOMake2.png" alt="DAOMaker" width={95} height={35}/></div>
                           </div>  
                           <div className={styles['left-animation']}>
-                              <div><Image src="/assets/img/imag17.png" alt="lbank" width={95} height={35}/></div>
-                              <div><Image src="/assets/img/Group48095535.png" alt="bitmart" width={95} height={35}/></div>
-                              <div><Image src="/assets/img/Group48095537.png" alt="certik" width={95} height={35}/></div>
-                              <div ><Image src="/assets/img/image11.png" alt="vaiot" width={95} height={35}/></div>
-                              <div><Image src="/assets/img/Group48095525.png" alt="mexc" width={80} height={20}/></div>
-                              <div><Image src="/assets/img/zv15.png" alt="gate" width={78} height={20}/></div>
-                              <div><Image src="/assets/img/biget1.png" alt="biget" width={78} height={20}/></div>
-                          </div>  
+                             
+                             <div><Image src="/assets/img/Group48095537.png" alt="certik" width={95} height={35}/></div>
+                             <div ><Image src="/assets/img/image11.png" alt="vaiot" width={95} height={35}/></div>
+                             <div><Image src="/assets/img/Group48095525.png" alt="mexc" width={80} height={20}/></div>
+                             <div><Image src="/assets/img/zv15.png" alt="gate" width={78} height={20}/></div>
+                             <div><Image src="/assets/img/biget1.png" alt="biget" width={78} height={20}/></div>
+                             <div><Image src="/assets/img/imag17.png" alt="lbank" width={95} height={35}/></div>
+                             <div><Image src="/assets/img/Group48095535.png" alt="bitmart" width={95} height={35}/></div>
+                             <div><Image src="/assets/img/DAOMake2.png" alt="DAOMaker" width={95} height={35}/></div>
+                         </div>    
                       </div>
                       <div className={styles['animation-container']}>
                         <div className={styles['right-animation']}>   
                           <div><Image src="/assets/img/image4r2.png" alt="floki" width={48} height={16}/></div>
-                          <div><Image src="/assets/img/DAOMake2.png" alt="DAOMaker" width={95} height={35}/></div>
                           <div><Image src="/assets/img/imageg3.png" alt="apeswap" width={95} height={35}/></div>
                           <div><Image src="/assets/img/image 10.png" alt="chain" width={95} height={35}/></div>
                           <div><Image src="/assets/img/Brickken_black.png" alt="Brickken" width={95} height={35}/></div>
@@ -630,7 +640,7 @@ const Home = () => {
               </linearGradient>
               </defs>
             </svg>
-              <h3 className={styles['third-title']}><span>THE SOLUTION:</span> UNIFIED CRYPTO PLATFORM</h3>
+              <h3 className={styles['third-title']}><span>THE SOLUTION:</span> UNIFIED WEB 3.0 PLATFORM</h3>
               <p className={styles.subtitle}>100 Franklins connects qualified projects with a educated audience, creating conditions for sustainable development and long-term profits</p>
               <div className={styles.cards}>
                 <div className={styles.card}>
@@ -984,15 +994,6 @@ const Home = () => {
             <span className={styles['section-count']}>1</span>
               <h2 className={styles['secondary-title']}>Cold Audience Lead Generation System</h2>
               <h4 className={styles['four-title']}>Traffic Generation System – Developed and Validated on $30,000 Budget</h4>
-            
-              <div className={`${styles['paid-content']} ${styles.mobile}`}>
-                <h5 className={styles['paid-title']}>Paid Advertising</h5>
-                <div className={styles['paid-logos']}>
-                  <Image src="/assets/img/Google.png" alt="Google" width={117} height={39}/>
-                  <Image src="/assets/img/Facebook.png" alt="Facebook" width={153} height={27}/>
-                  <Image src="/assets/img/Instagram.png" alt="Instagram" width={128} height={43}/>
-                </div>
-              </div>
               <h3 className={styles['third-title']}>Sales System</h3>
               <div className={styles['sales-system']}>
                 <div className={styles['sales-system-item']}>
@@ -1021,7 +1022,7 @@ const Home = () => {
                   />
                 </div>
               </div>
-              <div className={`${styles['paid-content']} `}>
+              <div className={`${styles['paid-content']} ${styles.mobile}`}>
                 <h5 className={styles['paid-title']}>Paid Advertising</h5>
                 <div className={styles['paid-logos']}>
                   <Image src="/assets/img/Google.png" alt="Google" width={117} height={39}/>
@@ -1053,6 +1054,9 @@ const Home = () => {
             <div className={styles['card-section']}> 
               <span className={styles['section-count']}>2</span>
             <h2 className={styles['secondary-title']}>WARM AUDIENCE BASE</h2>
+            <svg  className={styles["section-line"]} xmlns="http://www.w3.org/2000/svg" width="3" height="72" viewBox="0 0 3 72" fill="none">
+              <path d="M2 1L1 71" stroke="#FFDF2C" stroke-width="2" stroke-dasharray="2 2"/>
+              </svg>
             <p className={styles.subtitle}>We already have access to our target audience</p>
               <div className={styles.cards}>
                 <div className={styles.card}>
@@ -1116,8 +1120,7 @@ const Home = () => {
                     <Image  src='/assets/img/okk.png' width={80} height={22}/>
                     <Image  src='/assets/img/Bingxlogo1.png' width={96} height={28}/>
                     <Image  src='/assets/img/DAOMake2.png' width={157} height={41}/>
-                    <Image  src='/assets/img/KuCoin-logo2.png' width={80} height={22}/>
-                  
+                    <Image  src='/assets/img/KuCoin-logo2.png' width={120} height={22}/>
                   </div>
                 </div>
               </div>
@@ -1132,8 +1135,8 @@ const Home = () => {
               <p className={styles.subtitle}>Each new channel multiplies our reach & valuation</p>
               <div className={styles['charts-container']}>
                 <Image src='/assets/img/Group48095381.png' width={322} height={248}/>
-                <Image src='/assets/img/Group48095382.png' width={246} height={248}/>
                 <Image src='/assets/img/Group48095381-1.png' width={312} height={248}/>
+                <Image src='/assets/img/Group48095382.png' width={246} height={248}/>
               </div>
             </div>
             <div className={styles['card-section']}>

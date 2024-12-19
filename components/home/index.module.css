@@ -623,6 +623,7 @@ margin-right: 25px;
   top: -75px;
   z-index: -1;
 }
+.consumers .card-section:nth-of-type(2) .section-line,
 .consumers .card-section:nth-of-type(3) .section-line{
  z-index: -1;
 
@@ -1659,8 +1660,8 @@ margin-bottom: 20px;
   opacity: 1;
 }
 .add-desc{
-  max-width: 270px;
-  margin-right: 15px;
+  max-width: 390px;
+  margin-right: 0px;
 }
 .add-title{
   font-size: 20px;
@@ -1688,11 +1689,14 @@ margin-bottom: 20px;
 }
 .add-logos{
   display: flex;
-  justify-content: space-between;
- 
+  flex-wrap: wrap;
+  position: relative;
 }
+
 .add-logos img{
   object-fit: contain;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 .add-preview{
   width: 153px;
@@ -2416,6 +2420,11 @@ margin-bottom: 20px;
   .section-line{
     display: none;
   }
+  .consumers .card-section:nth-of-type(2) .section-line,
+  .consumers .card-section:nth-of-type(3) .section-line{
+  display: block;
+
+  }
   .section-line.mobile{
     display: block;
   }
@@ -2557,7 +2566,7 @@ margin-bottom: 20px;
     margin-bottom: 30px;
   }
   .paid-content.mobile .paid-title{
-    font-size: 14px;
+    font-size: 12px;
     margin-bottom: 20px;
     text-align: left;
   }
@@ -2581,10 +2590,8 @@ margin-bottom: 20px;
     margin-bottom: 10px;
   }
   .record-content p:first-child {
-    font-family: 'Geologica', sans-serif;
-    font-size: 16px;
-    font-weight: 300;
     margin-bottom: 20px;
+    font-size: 12px;
   }
   .record-content span {
     margin-left: 18px;
@@ -2606,10 +2613,8 @@ margin-bottom: 20px;
     width: 32px;
     height: 32px;
     font-size: 14px;
-    top: 5px;
-    left: 2%;
-    transform: translateX(-2%);
     border-radius: 10px;
+    top: -15px;
   }
   .exeptional-solution .card-section:nth-of-type(2){
     padding-right: 50px;
